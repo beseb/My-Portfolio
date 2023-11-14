@@ -1,0 +1,42 @@
+.about-section{
+    margin: 0;
+    height: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    &_picture{
+        grid-column: 1/2;
+        grid-row:  auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            
+            img{
+                object-fit: cover;
+                height: 120%;
+                width: 100%;
+            }
+        }
+    }
+    &_content{
+        grid-column: 2/3;
+        grid-row: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        word-wrap:break-word;
+        padding: 15px;
+    }
+}

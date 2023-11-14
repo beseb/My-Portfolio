@@ -1,0 +1,10 @@
+{
+    "web_accessible_resources": [ 
+        { 
+            "resources": ["/my-vite-portfolio/src/assets/images/*"], 
+            "matches": ["*"], 
+            "use_dynamic_url": true ,
+            "extensions_id":"iadokddofjgcgjpjlfhngclhpmaelnli"
+        }
+    ]
+}

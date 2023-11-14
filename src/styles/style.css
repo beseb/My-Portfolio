@@ -9,6 +9,13 @@ h3, h4, p {
   color: black;
 }
 
+.banner-section {
+  height: 100vh;
+  width: auto;
+  background-position: center;
+  background-size: contain;
+}
+
 h1, h2 {
   font-family: "Oswald", sans-serif;
   color: red;

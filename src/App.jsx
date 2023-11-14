@@ -9,23 +9,23 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 import sharedDatas from './assets/datas/portfolio_shared_data.json';
-import primaryDatas from './assets/datas/res_primaryLanguage.json';
-import secondaryDatas from '../src/assets/datas/res_secondaryLanguage.json';
+import primaryLangDatas from './assets/datas/res_primaryLanguage.json';
+import secondaryLangDatas from '../src/assets/datas/res_secondaryLanguage.json';
 
 import './styles/main.scss';
 
 function App() {
   return (
-    <div>
+    <body>
       <Header />
-      <Banner datas={sharedDatas} />
-      <About datas={sharedDatas} />
-      <Projects datas={primaryDatas} />
+      <Banner datas={primaryLangDatas} />
+      <About datas={primaryLangDatas} />
+      <Projects datas={primaryLangDatas} />
       <Skills datas={sharedDatas} />
-      <Experiences datas={primaryDatas} />
+      <Experiences datas={primaryLangDatas} />
       <ContactForm />
       <Footer datas={sharedDatas} />
-    </div>
+    </body>
   );
 }
 export default App;

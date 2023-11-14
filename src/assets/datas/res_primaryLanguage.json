@@ -1,7 +1,15 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Sebastien Escudero :) I'm working with newest front-end frameworks like React and Next.js . Welcome on my portfolio, where you can discover all of the web projects I've been working on. I'll be more than happy to help you to build your website, give you advice on your SEO and web analysis. Let's get in touch ! 📨",
+      "name": "Sébastien ESCUDERO",
+      "title": [
+        "Web-Designer & Full-stack Developer ⚡⚡"
+      ],
+      "cta":"Show me more",
+      "description_header": "Hi ! 👋",
+      "description_1": "I'm Sebastien :) I'm love to work with newest front-end frameworks like React and Next.js to make Internet a prettier place. ",
+      "description_2": "Welcome on my portfolio, where you can discover all of the projects I've been working on.",
+      "description_3": " I'll be more than happy to help you to build your website, give you advice on your SEO and do some web analysis.",
+      "description_4": "Let's get in touch ! 📨",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
