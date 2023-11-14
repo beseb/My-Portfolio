@@ -9,9 +9,9 @@ function Skills({datas}) {
     ));
   
     return (
-      <div>
+      <section className="skills-section">
         {icons}
-      </div>
+      </section>
     );
   }
   

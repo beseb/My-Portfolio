@@ -1,3 +1,5 @@
+
+
 /* eslint-disable react/prop-types */
 function Projects({ datas }) {
   let projects = datas.projects;
@@ -17,7 +19,9 @@ function Projects({ datas }) {
     );
   });
 
-  return <ul>{project}</ul>;
+  return <section className="projects-sections">
+    <ul>{project}</ul>;
+  </section>
 }
 
 export default Projects;

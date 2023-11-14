@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+
+
 function Experience({ datas }) {
   let experiences = datas.experience.map((exp, index) => {
     let techs = exp.technologies.map((tech, index) => (
@@ -16,7 +18,7 @@ function Experience({ datas }) {
     );
   });
 
-  return <div>{experiences}</div>;
+  return <section className="experiences-section">{experiences}</section>;
 }
 
 export default Experience;

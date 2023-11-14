@@ -1,0 +1,24 @@
+
+
+
+$background-color : white;
+$primary-font-family: 'Oswald',sans-serif;
+$primary-color: black;
+
+$secondary-font-family: 'Source Sans 3', sans-serif;
+$secondary-color: blue;
+
+
+
+$bold: 900;
+
+h1,h2{
+    font-family: $primary-font-family;
+    color: red;
+    letter-spacing: normal;
+  }
+  
+  h3,h4,p{
+    font-family: $secondary-font-family;
+    color: black;
+  }

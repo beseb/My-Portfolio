@@ -12,6 +12,8 @@ import sharedDatas from './assets/datas/portfolio_shared_data.json';
 import primaryDatas from './assets/datas/res_primaryLanguage.json';
 import secondaryDatas from '../src/assets/datas/res_secondaryLanguage.json';
 
+import './styles/main.scss';
+
 function App() {
   return (
     <div>
