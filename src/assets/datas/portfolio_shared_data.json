@@ -1,0 +1,76 @@
+{
+  "basic_info": {
+    "name": "Sébastien ESCUDERO",
+    "titles": [
+      "Web-Designer",
+      "Full-stack Developer"
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/beseb",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/sebastien-escudero/",
+        "class": "fab fa-linkedin"
+      },
+      {
+        "name": "email",
+        "url": "",
+        "class": "fa-solid fa-envelope"
+      }
+    ],
+    "image": "my-photo.png"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "HTML 5",
+        "class": "devicon-html5-plain",
+        "level": "95"
+      },
+      {
+        "name": "CSS 3",
+        "class": "devicon-css3-plain",
+        "level": "95"
+      },
+      {
+        "name": "TypeScript",
+        "class": "devicon-typescript-plain",
+        "level": "80"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "80"
+      },
+      {
+        "name": "Sass",
+        "class": "devicon-sass-original",
+        "level": "90"
+      },
+      {
+        "name": "Bootstrap",
+        "class": "devicon-bootstrap-plain",
+        "level": "85"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-original",
+        "level": "70"
+      },
+      {
+        "name": "NodeJs",
+        "class": "devicon-nodejs-plain",
+        "level": "70"
+      },
+      {
+        "name": "MongoDb",
+        "class": "devicon-mongodb-plain",
+        "level": "70"
+      }
+    ]
+  }
+}

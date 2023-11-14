@@ -1,0 +1,149 @@
+{
+  "basic_info": {
+    "description_header": "Hi",
+    "description": "👋 Je suis Sébastien Escudero :) J'aime travailler avec les derniers frameworks front-end comme React et Next.js. Bienvenue sur mon portfolio, où vous pouvez découvrir tous les projets web sur lesquels j'ai travaillé. Je serai plus que ravi de vous aider dans votre projet web, de vous donner des conseils sur votre référencement SEO et d'améliorer les performances de votre site web. Mettons-nous en contact ! 📨",
+    "section_name": {
+      "about": "A Propos",
+      "projects": "Projets",
+      "skills": "Skills",
+      "experience": "Expérience"
+    }
+  },
+  "projects": [
+    {
+      "title": "Kasa",
+      "startDate": "2023",
+      "description": "Un projet type AirBnb, crée avec React, Typescript et Sass, pour trouver et réserver un hébergement pour des vacances de rêves ! ",
+      "images": [
+        "images/portfolio/kasa/kasa-p1.png",
+        "images/portfolio/kasa/kasa-p2.png"
+      ],
+      "url": "https://kasa.seawebstudio.com",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class":"devicon-sass-original",
+          "name": "Sass"
+        }
+      ]
+    },
+    {
+      "title": "Vieux-Grimoire",
+      "startDate": "2023",
+      "description": "Un site de notation de livres en ligne, avec espace personnel. J'ai crée une API pour faire communiquer le back-end en NodeJs et la base de donnée MongoDb avec l'interface du site !",
+      "images": [
+        "images/portfolio/vieux-grimoire/p1.png",
+        "images/portfolio/vieux-grimoire/p2.png"
+      ],
+      "url": "https://vieux-grimoire.seawebstudio.com",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-nodejs-plain",
+          "name": "Node.js"
+        },
+        {
+          "class":"devicon-mongodb-plain",
+          "name":"MongoDb"
+        }
+      ]
+    },
+    {
+      "title": "Nina Carducci - Photographer",
+      "startDate": "2023",
+      "description": "Un des premiers projets effectués en autonomie durant ma formation. J'ai amélioré le réferencement SEO, optimisé les performances du site et corrigé des bugs techniques !",
+      "images": [
+        "images/portfolio/nina-carducci-portfolio/nina-p1.png",
+        "images/portfolio/nina-carducci-portfolio/nina-p2.png"
+      ],
+      "url": "https://nina-carducci.seawebstudio.com",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "Html5"
+        },
+        {
+          "class": "devicon-sass-original",
+          "name": "Sass"
+        },
+        {
+          "class": "devicon-jquery-plain-wordmark",
+          "name": "JQuery"
+        }
+      ]
+    },
+    {
+      "title": "Booki",
+      "startDate": "2023",
+      "description": "Une landing-page efficace et responsive pour un site de réservations d'hébergements en ligne !",
+      "images": [
+        "images/portfolio/booki/p1.png",
+        "images/portfolio/booki/p2.png"
+      ],
+      "url": "https://booki.seawebstudio.com",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "Html 5"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "Css 3"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "OpenClassrooms",
+      "title": "Formation Développeur Web et Mobile, Bac + 2",
+      "years": "01.2023 - present",
+      "mainTech": [
+        "React"
+      ],
+      "technologies": [
+        "React",
+        "HTML 5",
+        "CSS 3",
+        "JavaScript",
+        "Sass",
+        "Bootstrap",
+        "Material Design",
+        "NodeJs",
+        "REST API",
+        "Express.Js",
+        "MongoDb",
+        "Git",
+        "Github",
+        "Méthode Agile"
+      ]
+    },
+    {
+      "company": "Code Academy",
+      "title": "Full-Stack Développeur - Formation",
+      "years": "06.2022 - 01.2023",
+      "mainTech": [
+        "Javascript"
+      ],
+      "technologies": [
+        "HTML 5",
+        "CSS 3",
+        "JavaScript",
+        "NodeJs",
+        "Sass",
+        "Git",
+        "Github"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+@import './components/about.scss';
+@import './components/banner.scss';
+@import './components/contactForm.scss';
+@import './components/experiences.scss';
+@import './components/projects.scss';
+@import './components/skills.scss';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './mixins.scss';
+@import './variables.scss';
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  margin: 0;
+  padding: 0;
+}
