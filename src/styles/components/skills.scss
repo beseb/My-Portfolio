@@ -1,0 +1,12 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.skills-section{
+    background-color: lightcoral;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
