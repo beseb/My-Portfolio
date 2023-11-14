@@ -16,7 +16,7 @@ import './styles/main.scss';
 
 function App() {
   return (
-    <body>
+    <main>
       <Header />
       <Banner datas={primaryLangDatas} />
       <About datas={primaryLangDatas} />
@@ -24,8 +24,8 @@ function App() {
       <Skills datas={sharedDatas} />
       <Experiences datas={primaryLangDatas} />
       <ContactForm />
-      <Footer datas={sharedDatas} />
-    </body>
+      <Footer />
+    </main>
   );
 }
 export default App;

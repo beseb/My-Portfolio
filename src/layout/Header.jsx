@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import seaLogo from '/images/SEA-logo.png';
 import '../styles/layout/header.scss';
+
+
 function Header() {
   return (
     <header>

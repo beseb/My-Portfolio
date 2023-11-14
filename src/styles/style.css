@@ -1,6 +1,49 @@
+.about-section {
+  background-color: lightgreen;
+  margin: 0;
+  height: 50vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+}
+.about-section_picture {
+  grid-column: 1/2;
+  grid-row: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-section_picture .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about-section_picture .circle img {
+  object-fit: cover;
+  height: 120%;
+  width: 100%;
+}
+.about-section_content {
+  grid-column: 2/3;
+  grid-row: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
 h1, h2 {
   font-family: "Oswald", sans-serif;
-  color: red;
+  color: black;
   letter-spacing: normal;
 }
 
@@ -11,14 +54,96 @@ h3, h4, p {
 
 .banner-section {
   height: 100vh;
-  width: auto;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: grey;
+  background-image: url("/images/background-image.png");
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+}
+.banner-section .content {
+  margin-top: -150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.banner-section .content h1 {
+  font-size: 3em;
+}
+.banner-section .content .CTA {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.5em;
+}
+
+.card_container {
+  background-color: red;
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
 }
 
 h1, h2 {
   font-family: "Oswald", sans-serif;
-  color: red;
+  color: black;
+  letter-spacing: normal;
+}
+
+h3, h4, p {
+  font-family: "Source Sans 3", sans-serif;
+  color: black;
+}
+
+.projects-section {
+  background-color: lightblue;
+  height: fit-content;
+  width: 100%;
+  padding: 20px;
+}
+.projects-section ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+h1, h2 {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  letter-spacing: normal;
+}
+
+h3, h4, p {
+  font-family: "Source Sans 3", sans-serif;
+  color: black;
+}
+
+.skills-section {
+  background-color: lightcoral;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1, h2 {
+  font-family: "Oswald", sans-serif;
+  color: black;
   letter-spacing: normal;
 }
 
@@ -28,17 +153,18 @@ h3, h4, p {
 }
 
 header {
+  background-color: lightblue;
   width: 100%;
-  max-height: 10%;
+  max-height: 150px;
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 5px;
   align-items: center;
   justify-content: space-between;
 }
 
 .seaLogo {
-  height: 8em;
+  height: 20em;
   width: auto;
 }
 
@@ -66,7 +192,50 @@ nav a:active {
 
 h1, h2 {
   font-family: "Oswald", sans-serif;
-  color: red;
+  color: black;
+  letter-spacing: normal;
+}
+
+h3, h4, p {
+  font-family: "Source Sans 3", sans-serif;
+  color: black;
+}
+
+footer {
+  background-color: lightblue;
+  height: 15vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  font-family: "Source Sans 3", sans-serif;
+}
+footer .seaLogo {
+  height: 20em;
+  width: auto;
+}
+footer .--content {
+  width: 50%;
+  height: 100%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .--content .links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  margin-top: 5%;
+}
+h1, h2 {
+  font-family: "Oswald", sans-serif;
+  color: black;
   letter-spacing: normal;
 }
 
@@ -82,9 +251,25 @@ html {
   box-sizing: border-box;
 }
 
-#root {
+#root, html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  height: 50px;
+  min-width: 200px;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

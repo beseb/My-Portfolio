@@ -1,17 +1,40 @@
-
+import '../styles/main.scss';
+import seaLogo from '/images/SEA-logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 /* eslint-disable react/prop-types */
-function Footer({ datas }) {
-  let socials = datas.basic_info.social.map((soc, index) => {
-    return (
-      <li key={index} className={soc.class}>
-        <a href={soc.url} target='blank'>
-          {soc.name}
-        </a>
-      </li>
-    );
-  });
-  return <footer >
-    <ul>{socials}</ul>;
-  </footer>
+
+function Footer() {
+  return (
+    <footer>
+      <img src={seaLogo} alt='Logo SEA Web-Studio' className='seaLogo' />
+      <div className='--content'>
+        <div className="links">
+          <a
+            href='http://github.com/beseb'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FontAwesomeIcon icon={faGithub} style={{height:'3em', color:"black"}}/>
+          </a>
+          <a
+            href='https://www.linkedin.com/in/sebastien-escudero/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FontAwesomeIcon icon={faLinkedin} style={{height:'3em', color:"blue"}}/>
+          </a>
+          <button>
+            <FontAwesomeIcon icon={faEnvelope} style={{height:'3em', color:"black"}}/>
+          </button>
+        </div>
+
+        <span className='copyright'>
+          © 2023 SEA Web-Studio. All rights reserved.
+        </span>
+      </div>
+    </footer>
+  );
 }
 export default Footer;

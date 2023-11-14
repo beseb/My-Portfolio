@@ -1,5 +1,5 @@
-@import '../variables.scss';
 @import '../mixins.scss';
+@import '../variables.scss';
 
 header{
     background-color: lightblue;
@@ -14,7 +14,7 @@ header{
 }
 
 .seaLogo{
-    height: 300px;
+    height: 20em;
     width: auto;
 }
 
