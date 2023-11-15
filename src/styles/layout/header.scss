@@ -15,7 +15,7 @@ header {
   .seaLogo {
     width: 10%;
   }
-  .desktop-nav {
+  .desktopNav {
     width: 50%;
     color: $primary-color;
     display: flex;
@@ -42,7 +42,7 @@ header {
       }
     }
   }
-  .mobile-nav{
+  .mobileNav{
     @media screen and (min-width:769px) {
       display: none;
     }
