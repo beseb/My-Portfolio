@@ -8,14 +8,14 @@ $primary-color: black;
 $secondary-font-family: 'Source Sans 3', sans-serif;
 $secondary-color: blue;
 
-
+// $responsiveSize : 1em
+// $responsiveHeight : calc($responsiveSize + 10vw);
 
 $bold: 900;
 
 h1,h2{
     font-family: $primary-font-family;
     color: black;
-    letter-spacing: normal;
   }
   
   h3,h4,p{

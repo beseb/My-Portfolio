@@ -25,7 +25,7 @@ function Projects({ datas }) {
     );
   });
 
-  return <section className="projects-section">
+  return <section className="projects-section" id="projects">
     <ul style={{listStyle:"none"}}>{projectItems}</ul>
   </section>;
 }

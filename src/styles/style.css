@@ -44,7 +44,6 @@
 h1, h2 {
   font-family: "Oswald", sans-serif;
   color: black;
-  letter-spacing: normal;
 }
 
 h3, h4, p {
@@ -97,7 +96,6 @@ h3, h4, p {
 h1, h2 {
   font-family: "Oswald", sans-serif;
   color: black;
-  letter-spacing: normal;
 }
 
 h3, h4, p {
@@ -123,7 +121,6 @@ h3, h4, p {
 h1, h2 {
   font-family: "Oswald", sans-serif;
   color: black;
-  letter-spacing: normal;
 }
 
 h3, h4, p {
@@ -144,7 +141,6 @@ h3, h4, p {
 h1, h2 {
   font-family: "Oswald", sans-serif;
   color: black;
-  letter-spacing: normal;
 }
 
 h3, h4, p {
@@ -161,14 +157,12 @@ header {
   padding: 5px;
   align-items: center;
   justify-content: space-between;
+  box-sizing: content-box;
 }
-
-.seaLogo {
-  height: 20em;
-  width: auto;
+header .seaLogo {
+  width: 10%;
 }
-
-nav {
+header nav {
   width: 50%;
   font-family: "Source Sans 3", sans-serif;
   font-size: 1.5em;
@@ -176,24 +170,23 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
-nav a {
+header nav a {
   color: black;
   text-decoration: none;
 }
-nav a:hover {
-  border-bottom: 2px solid blue;
+header nav a:hover {
+  text-decoration: underline;
 }
-nav a:visited {
+header nav a:visited {
   color: black;
 }
-nav a:active {
+header nav a:active {
   color: black;
 }
 
 h1, h2 {
   font-family: "Oswald", sans-serif;
   color: black;
-  letter-spacing: normal;
 }
 
 h3, h4, p {
@@ -213,13 +206,12 @@ footer {
   font-family: "Source Sans 3", sans-serif;
 }
 footer .seaLogo {
-  height: 20em;
-  width: auto;
+  width: 10%;
 }
 footer .--content {
   width: 50%;
   height: 100%;
-  margin-left: 5%;
+  margin-left: 15%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -236,7 +228,6 @@ footer .--content .links {
 h1, h2 {
   font-family: "Oswald", sans-serif;
   color: black;
-  letter-spacing: normal;
 }
 
 h3, h4, p {

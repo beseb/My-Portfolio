@@ -9,7 +9,7 @@ function Skills({datas}) {
     ));
   
     return (
-      <section className="skills-section">
+      <section className="skills-section" id="skills">
         {icons}
       </section>
     );

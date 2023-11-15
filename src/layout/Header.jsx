@@ -1,18 +1,28 @@
 /* eslint-disable react/prop-types */
-import seaLogo from '/images/SEA-logo.png';
-import '../styles/layout/header.scss';
+import seaLogo from '/images/SEA-logo.svg';
+import '../styles/main.scss';
 
 
 function Header() {
   return (
     <header>
 
-      <img src={seaLogo} alt='Logo SEA Web-Studio' className='seaLogo' />
-      <nav>
-        <a href='#About'>About</a>
-        <a href='#Projects'>Projects</a>
-        <a href='#Experiences'>Experiences</a>
-        <a href='#ContactForm'>Contact</a>
+      <img src={seaLogo} alt='Logo SEA Web-Studio' className='seaLogo'/>
+      <nav className='desktop-nav'>
+        <a href='#about'>About</a>
+        <a href='#projects'>Projects</a>
+        <a href='#experiences'>Experiences</a>
+        <a href='#contactForm'>Contact</a>
+        <div className='nav_buttons'>
+          <button className='setLangage'>🚩</button>
+          <button className='setThemeColor'>🌙</button>
+        </div>
+      </nav>
+      <nav className='mobile-nav'>
+        <a href='#about'>About</a>
+        <a href='#projects'>Projects</a>
+        <a href='#experiences'>Experiences</a>
+        <a href='#contactForm'>Contact</a>
         <div className='nav_buttons'>
           <button className='setLangage'>🚩</button>
           <button className='setThemeColor'>🌙</button>

@@ -3,7 +3,7 @@ import '../styles/main.scss';
 import myPhoto from '/images/my-photo.png'
 function About({ datas }) {
   return (
-    <section className='about-section'>
+    <section className='about-section' id="about">
       <div className='about-section_picture '>
         <div className="circle"><img src={myPhoto} alt='Photo of S.Escudero from SEA Web-Studio'></img></div></div>
       <div className='about-section_content'>
