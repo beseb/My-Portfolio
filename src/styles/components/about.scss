@@ -1,5 +1,8 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
 .about-section{
-    background-color: lightgreen;
+    background-color: $secondary-background-color;
     margin: 0;
     height: 50vh;
     width: 100%;
@@ -39,5 +42,8 @@
         width: fit-content;
         word-wrap:break-word;
         padding: 15px;
+        h3,h4{
+            color: white;
+        }
     }
 }

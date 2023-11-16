@@ -4,15 +4,15 @@
 function Experience({ datas }) {
   let experiences = datas.experience.map((exp, index) => {
     let techs = exp.technologies.map((tech, index) => (
-      <li key={index}>{tech}</li>
+      <li key={index} style={{listStyle:"none"}}><p>{tech}</p></li>
     ));
 
     return (
-      <div key={index}>
+      <div key={index} className="experiences_container" style={{gridColumn : index + 1, gridRow: index + 1}}>
         <h3>{exp.title}</h3>
-        <p>{exp.years}</p>
-        <p>{exp.company}</p>
-        <p>Main Technology: {exp.mainTech}</p>
+        <p className="italic">{exp.years}</p>
+        <h4 className="bold">{exp.company}</h4>
+        <p>Main Technology: <strong>{exp.mainTech}</strong></p>
         <ul>{techs}</ul>
       </div>
     );
