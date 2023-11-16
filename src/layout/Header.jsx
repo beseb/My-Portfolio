@@ -9,7 +9,7 @@ function Header() {
     <header>
 
       <img src={seaLogo} alt='Logo SEA Web-Studio' className='seaLogo'/>
-      <nav className='desktop-nav'>
+      <nav className='desktopNav'>
         <a href='#about'>About</a>
         <a href='#projects'>Projects</a>
         <a href='#experiences'>Experiences</a>
