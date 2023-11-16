@@ -29,47 +29,63 @@
       {
         "name": "HTML 5",
         "class": "devicon-html5-plain",
-        "level": "95"
+        "level": "95",
+        "iconColor":"orange"
       },
       {
         "name": "CSS 3",
         "class": "devicon-css3-plain",
-        "level": "95"
+        "level": "95",
+        "iconColor": "blue"
       },
       {
         "name": "TypeScript",
         "class": "devicon-typescript-plain",
-        "level": "80"
+        "level": "80",
+        "iconColor": "blue"
+
       },
       {
         "name": "JavaScript",
         "class": "devicon-javascript-plain",
-        "level": "80"
+        "level": "80",
+        "iconColor": "yellow"
+
       },
       {
         "name": "Sass",
         "class": "devicon-sass-original",
-        "level": "90"
+        "level": "90",
+        "iconColor": "pink"
+
       },
       {
         "name": "Bootstrap",
         "class": "devicon-bootstrap-plain",
-        "level": "85"
+        "level": "85",
+        "iconColor": "blue"
+
       },
       {
         "name": "React",
         "class": "devicon-react-original",
-        "level": "70"
+        "level": "70",
+        "iconColor": "cyan"
+
       },
       {
         "name": "NodeJs",
         "class": "devicon-nodejs-plain",
-        "level": "70"
+        "level": "70",
+        "iconColor": "green"
+
       },
       {
         "name": "MongoDb",
         "class": "devicon-mongodb-plain",
-        "level": "70"
+        "level": "70",
+        "iconColor": "green"
+
       }
     ]
   }

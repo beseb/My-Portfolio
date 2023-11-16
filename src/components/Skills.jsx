@@ -2,7 +2,7 @@
 function Skills({datas}) {
     let icons = datas.skills.icons.map((icon, index) => (
       <div key={index}>
-        <i className={icon.class}></i>
+        <i className={icon.class} style={{color: icon.iconColor}}></i>
         <h4>{icon.name}</h4>
         <p>Level : {icon.level}</p>
       </div>

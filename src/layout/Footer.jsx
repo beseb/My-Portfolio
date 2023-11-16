@@ -16,14 +16,14 @@ function Footer() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FontAwesomeIcon icon={faGithub} style={{height:'3em', color:"white"}}/>
+            <FontAwesomeIcon icon={faGithub} style={{height:'3em', color:"black"}}/>
           </a>
           <a
             href='https://www.linkedin.com/in/sebastien-escudero/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FontAwesomeIcon icon={faLinkedin} style={{height:'3em', color:"white"}}/>
+            <FontAwesomeIcon icon={faLinkedin} style={{height:'3em', color:"blue"}}/>
           </a>
           <button>
             <FontAwesomeIcon icon={faEnvelope} style={{height:'3em', color:"black", border:"none"}}/>

@@ -117,41 +117,46 @@
         "company": "OpenClassrooms",
         "title": "Full-Stack Developper Scholarship",
         "years": "01.2023 - present",
+        "description":"Web-Development Graduation, Full-Stack Developer",
         "mainTech": [
           "React"
         ],
         "technologies": [
-          "React",
-          "HTML 5",
-          "CSS 3",
-          "JavaScript",
-          "Sass",
-          "Bootstrap",
-          "NodeJs",
-          "REST API",
-          "Express.Js",
-          "MongoDb",
-          "Git",
-          "Github",
-          "Material Design"
+          "React, ",
+          "JavaScript, ",
+          "Sass, ",
+          "Bootstrap, ",
+          "Material Design, ",
+          "NodeJs, ",
+          "REST API, ",
+          "Express.Js, ",
+          "MongoDb, ",
+          "Git & Github, ",
+          "Agile Methodology"
         ]
       },
       {
         "company": "Code Academy",
         "title": "Full-Stack Developper Course",
         "years": "09.2022 - 01.2023",
+        "description":"Web-Development Graduation, Web-Developer",
         "mainTech": [
           "Javascript"
         ],
         "technologies": [
-          "HTML 5",
-          "CSS 3",
-          "JavaScript",
-          "NodeJs",
-          "Sass",
-          "Git",
-          "Github"
+          "HTML5, ",
+          "CSS3, ",
+          "JavaScript, ",
+          "NodeJs, ",
+          "Sass, ",
+          "Git & Github"
         ]
+      },
+      {
+        "company": "Université Paris 1 Sorbonne",
+        "title": "Bachelor of Philosophy",
+        "years": "2007 - 2010",
+        "description":"Graduation in Philosophy and Human Sciences"
       }
 
       

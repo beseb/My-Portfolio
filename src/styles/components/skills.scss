@@ -2,7 +2,7 @@
 @import '../mixins.scss';
 
 .skills-section{
-    background-color: lightcoral;
+    background-color: $primary-background-color;
     height: 30vh;
     width: 100%;
     &_container{

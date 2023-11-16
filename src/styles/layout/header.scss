@@ -2,7 +2,7 @@
 @import '../variables.scss';
 
 header {
-  background-color: $secondary-background-color;
+  background-color: $primary-background-color;
   width: 100%;
   height: $header-height;
   // max-height: 150px;
@@ -29,17 +29,17 @@ header {
     a {
       font-family: $secondary-font-family;
       font-size: 0.9em;
-      color: $primary-background-color;
+      color: $primary-color;
       text-decoration: none;
 
       &:hover {
         text-decoration: underline;
       }
       &:visited {
-        color: $primary-background-color;
+        color: $primary-color;
       }
       &:active {
-        color: $primary-background-color;
+        color: $primary-color;
       }
     }
   }

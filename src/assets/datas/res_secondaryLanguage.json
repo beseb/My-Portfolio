@@ -4,13 +4,13 @@
     "title": [
       "Designer Web & Developpeur Full-Stack ⚡⚡"
     ],
-    "cta":"En savoir plus",
-    "cta_website":"Voir le site",
+    "cta": "En savoir plus",
+    "cta_website": "Voir le site",
     "description_header": "Salut ! 👋",
     "description_1": " Je suis Sébastien Escudero :) J'aime travailler avec les derniers frameworks front-end comme React et Next.js pour faire du Web un plus bel endroit.",
-    "description_2":" Bienvenue sur mon portfolio, où vous pouvez découvrir tous les projets web sur lesquels j'ai travaillé.",
+    "description_2": " Bienvenue sur mon portfolio, où vous pouvez découvrir tous les projets web sur lesquels j'ai travaillé.",
     "description_3": "Je serai plus que ravi de vous aider dans votre projet web, de vous donner des conseils sur votre référencement SEO et d'améliorer les performances de votre site web.",
-    "description_4" : "Mettons-nous en contact ! 📨",
+    "description_4": "Mettons-nous en contact ! 📨",
     "section_name": {
       "about": "A Propos",
       "projects": "Projets",
@@ -38,7 +38,7 @@
           "name": "TypeScript"
         },
         {
-          "class":"devicon-sass-original",
+          "class": "devicon-sass-original",
           "name": "Sass"
         }
       ]
@@ -62,8 +62,8 @@
           "name": "Node.js"
         },
         {
-          "class":"devicon-mongodb-plain",
-          "name":"MongoDb"
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDb"
         }
       ]
     },
@@ -117,42 +117,46 @@
       "company": "OpenClassrooms",
       "title": "Formation Développeur Web et Mobile, Bac + 2",
       "years": "01.2023 - present",
+      "description": "Formation longue en Développement Web Full-Stack",
       "mainTech": [
         "React"
       ],
       "technologies": [
-        "React",
-        "HTML 5",
-        "CSS 3",
-        "JavaScript",
-        "Sass",
-        "Bootstrap",
-        "Material Design",
-        "NodeJs",
-        "REST API",
-        "Express.Js",
-        "MongoDb",
-        "Git",
-        "Github",
-        "Méthode Agile"
+        "React, ",
+        "JavaScript, ",
+        "Sass, ",
+        "Bootstrap, ",
+        "Material Design, ",
+        "NodeJs, ",
+        "REST API, ",
+        "Express.Js, ",
+        "MongoDb, ",
+        "Git & Github, ",
+        "Méthode Agile "
       ]
     },
     {
       "company": "Code Academy",
       "title": "Full-Stack Développeur - Formation",
       "years": "06.2022 - 01.2023",
+      "description": "Formation autodidacte en développement web",
       "mainTech": [
         "Javascript"
       ],
       "technologies": [
-        "HTML 5",
-        "CSS 3",
-        "JavaScript",
-        "NodeJs",
-        "Sass",
-        "Git",
-        "Github"
+        "HTML5, ",
+        "CSS3, ",
+        "JavaScript, ",
+        "NodeJs, ",
+        "Sass, ",
+        "Git & Github"
       ]
+    },
+    {
+      "company": "Université Paris 1 Sorbonne",
+      "title": "Licence en Philosophie",
+      "years": "2007 - 2010",
+      "description": "Licence en Philosophie et Sciences Humaines"
     }
   ]
 }

@@ -5,6 +5,7 @@ import About from '../src/components/About';
 import Banner from '../src/components/Banner';
 import ContactForm from './components/ContactForm';
 import Experiences from './components/Experiences';
+import ExperiencesVertical from './components/ExperiencesVertical';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 
@@ -21,8 +22,8 @@ function App() {
       <Banner datas={primaryLangDatas} />
       <About datas={primaryLangDatas} />
       <Projects datas={primaryLangDatas} />
+      <ExperiencesVertical datas={primaryLangDatas}/>
       <Skills datas={sharedDatas} />
-      <Experiences datas={primaryLangDatas} />
       <ContactForm />
       <Footer />
     </main>

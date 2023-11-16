@@ -2,14 +2,6 @@
 @import '../mixins.scss';
 
 .experiences-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-template-rows: repeat(2, 1fr);
-
-  .experiences-container {
-    ul {
-      list-style: none;
-    }
-  }
+background-color: $primary-background-color;
+width: 100%;
 }
