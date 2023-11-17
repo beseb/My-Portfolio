@@ -4,6 +4,9 @@ import myPhoto from '/images/my-photo.png'
 function About({ datas }) {
   return (
     <section className='about-section' id="about">
+           <h2 className='section-title'>
+        {datas.basic_info.section_name.about}
+      </h2>
       <div className='about-section_picture '>
         <div className="circle"><img src={myPhoto} alt='Photo of S.Escudero from SEA Web-Studio'></img></div></div>
       <div className='about-section_content'>

@@ -26,6 +26,7 @@ function Projects({ datas }) {
   });
 
   return <section className="projects-section" id="projects">
+    <h2 className='section-title'>{datas.basic_info.section_name.projects}</h2>
     <ul style={{listStyle:"none"}}>{projectItems}</ul>
   </section>;
 }

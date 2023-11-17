@@ -5,11 +5,15 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work';
-import SchoolIcon from '@mui/icons-material/School'
+import SchoolIcon from '@mui/icons-material/School';
 
 function ExperiencesVertical({ datas }) {
   return (
     <section className='experiences-section'>
+      <h2 className='section-title'>
+        {datas.basic_info.section_name.experiences}
+      </h2>
+
       <VerticalTimeline>
         <VerticalTimelineElement
           className='vertical-timeline-element--work'
@@ -49,23 +53,20 @@ function ExperiencesVertical({ datas }) {
           </p>
           <p>{datas.experience[1].technologies}</p>
         </VerticalTimelineElement>
-       <VerticalTimelineElement
+        <VerticalTimelineElement
           className='vertical-timeline-element--education'
           date={datas.experience[2].years}
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<SchoolIcon />}
         >
-        <h3 className='vertical-timeline-element-title'>
+          <h3 className='vertical-timeline-element-title'>
             {datas.experience[2].company}
           </h3>
           <h4 className='vertical-timeline-element-subtitle'>
             {datas.experience[2].title}
           </h4>
-          <p>
-            {datas.experience[2].description}
-         </p>
+          <p>{datas.experience[2].description}</p>
         </VerticalTimelineElement>
-   
       </VerticalTimeline>
     </section>
   );
