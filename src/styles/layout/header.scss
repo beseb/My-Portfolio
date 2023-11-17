@@ -42,6 +42,11 @@ header {
         color: $primary-color;
       }
     }
+    .nav_buttons {
+      button {
+        margin-left: 15px;
+      }
+    }
   }
   .btnToggleMenu {
     @media screen and (min-width: 769px) {
@@ -50,7 +55,7 @@ header {
     @media screen and (max-width: 768px) {
       display: block;
     }
-}
+  }
   .mobileNav_container {
     height: 100%;
     width: 50%;

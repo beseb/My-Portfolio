@@ -27,6 +27,7 @@
           "images/portfolio/kasa/kasa-p1.png",
           "images/portfolio/kasa/kasa-p2.png"
         ],
+        "alt":"kasa image",
         "url": "https://kasa.seawebstudio.com",
         "technologies": [
           {

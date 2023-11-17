@@ -1,25 +1,61 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
-.skills-section{
-    background-color: $primary-background-color;
-    height: 30vh;
-    width: 100%;
-    &_container{
-        padding: 10px;
+.skills-section {
+  background-color: $primary-background-color;
+  height: 30vh;
+  width: 100%;
+  
+  &_overlay{
+    border-radius: 15%;
+    overflow: hidden;
+    width: 70%;
+  }
+
+  &_carousel {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%; // Double the width
+    // overflow: hidden;
+
+    .carousel_container {
+      display: flex;
+      animation: scroll 30s linear infinite;
+      width: 100%;
+      .carousel_container:nth-child(2) {
+        animation-delay: 15s;
+      }
+      .skills-icons {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-evenly;
-        width: 90%;
-        gap: 30px;
-        i{
-            font-size: 2em;
-        }
-        h4{
-            font-weight: 700;
+        width: 50%; // Half the width
+        margin-right: 5vw;
+
+        i {
+          flex-shrink: 0;
+          font-size: 2em;
+          margin-right: 1em;
         }
 
+        h4 {
+          font-weight: 700;
+        }
+      }
     }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  }
 }
