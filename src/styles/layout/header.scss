@@ -18,7 +18,7 @@ header {
   }
   .desktopNav {
     width: 50%;
-    color: $primary-color;
+    color: $primary-font-color;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -29,17 +29,17 @@ header {
     a {
       font-family: $secondary-font-family;
       font-size: 0.9em;
-      color: $primary-color;
+      color: $primary-font-color;
       text-decoration: none;
 
       &:hover {
         text-decoration: underline;
       }
       &:visited {
-        color: $primary-color;
+        color: $primary-font-color;
       }
       &:active {
-        color: $primary-color;
+        color: $primary-font-color;
       }
     }
     .nav_buttons {
@@ -89,15 +89,13 @@ header {
 
         a {
           font-family: $secondary-font-family;
-          color: $primary-color;
+          color: $primary-font-color;
           text-decoration: none;
           &:hover {
           }
-          &:visited {
-            color: $primary-color;
-          }
-          &:active {
-            color: $primary-color;
+          &:visited,
+          :active {
+            color: $primary-font-color;
           }
         }
       }

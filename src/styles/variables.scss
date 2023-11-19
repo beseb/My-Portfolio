@@ -1,15 +1,16 @@
 $primary-background-color: #F6F4F4;
-$button-background-color:#dddddd;
 $secondary-background-color: grey;
+$button-background-color:#a49f9f;
 
 $primary-font-family: 'Oswald', sans-serif;
-$primary-color: black;
+$primary-font-color: black;
 
 $secondary-font-family: 'Source Sans 3', sans-serif;
-$secondary-color: blue;
+$secondary-font-color: $primary-background-color;
 
 $header-height: 10vw;
 
+$border-radius: 20px;
 
 h1,
 h2 {

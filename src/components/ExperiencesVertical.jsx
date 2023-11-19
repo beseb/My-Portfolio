@@ -6,15 +6,16 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
+import '../styles/main.scss';
 
 function ExperiencesVertical({ datas }) {
   return (
-    <section className='experiences-section'>
+    <section className='experiences-section' id='experiences'>
       <h2 className='section-title'>
         {datas.basic_info.section_name.experiences}
       </h2>
 
-      <VerticalTimeline>
+      <VerticalTimeline style={{zIndex: -1}}>
         <VerticalTimelineElement
           className='vertical-timeline-element--work'
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}

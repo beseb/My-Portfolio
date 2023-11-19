@@ -1,165 +1,167 @@
 {
-    "basic_info": {
-      "name": "Sébastien ESCUDERO",
-      "title": [
-        "Web-Designer & Full-stack Developer ⚡⚡"
-      ],
-      "cta":"Show me more",
-      "cta_website":"Show me",
-      "description_header": "Hi ! 👋",
-      "description_1": "I'm Sebastien :) I'm love to work with newest front-end frameworks like React and Next.js to make Internet a prettier place. ",
-      "description_2": "Welcome on my portfolio, where you can discover all of the projects I've been working on.",
-      "description_3": " I'll be more than happy to help you to build your website, give you advice on your SEO and do some web analysis.",
-      "description_4": "Let's get in touch ! 📨",
-      "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills",
-        "experiences": "Experiences"
-      }
-    },
-    "projects": [
-      {
-        "title": "Kasa",
-        "startDate": "2023",
-        "description": "A project inspired by Airbnb, to choose and book accommodations and have dreamed vacations ! Done in React, Typescript and Sass !",
-        "images": [
-          "images/portfolio/kasa/kasa-p1.png",
-          "images/portfolio/kasa/kasa-p2.png"
-        ],
-        "alt":"kasa image",
-        "url": "https://kasa.seawebstudio.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class":"devicon-sass-original",
-            "name": "Sass"
-          }
-        ]
-      },
-      {
-        "title": "Vieux-Grimoire",
-        "startDate": "2023",
-        "description": "Online book rating website, I've created an API to communicate with the website's back-end and database, using Node.js and MongoDb.",
-        "images": [
-          "images/portfolio/vieux-grimoire/p1.png",
-          "images/portfolio/vieux-grimoire/p2.png"
-        ],
-        "url": "https://vieux-grimoire.seawebstudio.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-nodejs-plain",
-            "name": "Node.js"
-          },
-          {
-            "class":"devicon-mongodb-plain",
-            "name":"MongoDb"
-          }
-        ]
-      },
-      {
-        "title": "Nina Carducci - Photographer",
-        "startDate": "2023",
-        "description": "One of the first project I've done in my scholarship. I improved the SEO, global speed & security for a photographer's website and fixed a few bugs.",
-        "images": [
-          "images/portfolio/nina-carducci-portfolio/nina-p1.png",
-          "images/portfolio/nina-carducci-portfolio/nina-p2.png"
-        ],
-        "url": "https://nina-carducci.seawebstudio.com",
-        "technologies": [
-          {
-            "class": "devicon-html5-plain",
-            "name": "Html5"
-          },
-          {
-            "class": "devicon-sass-original",
-            "name": "Sass"
-          },
-          {
-            "class": "devicon-jquery-plain-wordmark",
-            "name": "JQuery"
-          }
-        ]
-      },
-      {
-        "title": "Booki",
-        "startDate": "2023",
-        "description": "A simple and responsive landing-page for booking accomodations for a nice city-trip !",
-        "images": [
-          "images/portfolio/booki/p1.png",
-          "images/portfolio/booki/p2.png"
-        ],
-        "url": "https://booki.seawebstudio.com",
-        "technologies": [
-          {
-            "class": "devicon-html5-plain",
-            "name": "Html 5"
-          },
-          {
-            "class": "devicon-css3-plain",
-            "name": "Css 3"
-          }
-        ]
-      }
+  "basic_info": {
+    "name": "Sébastien ESCUDERO",
+    "title": [
+      "Web-Designer & Full-stack Developer ⚡⚡"
     ],
-    "experience": [
-      {
-        "company": "OpenClassrooms",
-        "title": "Full-Stack Developper Scholarship",
-        "years": "01.2023 - present",
-        "description":"Web-Development Graduation, Full-Stack Developer",
-        "mainTech": [
-          "React"
-        ],
-        "technologies": [
-          "React, ",
-          "JavaScript, ",
-          "Sass, ",
-          "Bootstrap, ",
-          "Material Design, ",
-          "NodeJs, ",
-          "REST API, ",
-          "Express.Js, ",
-          "MongoDb, ",
-          "Git & Github, ",
-          "Agile Methodology"
-        ]
-      },
-      {
-        "company": "Code Academy",
-        "title": "Full-Stack Developper Course",
-        "years": "09.2022 - 01.2023",
-        "description":"Web-Development Graduation, Web-Developer",
-        "mainTech": [
-          "Javascript"
-        ],
-        "technologies": [
-          "HTML5, ",
-          "CSS3, ",
-          "JavaScript, ",
-          "NodeJs, ",
-          "Sass, ",
-          "Git & Github"
-        ]
-      },
-      {
-        "company": "Université Paris 1 Sorbonne",
-        "title": "Bachelor of Philosophy",
-        "years": "2007 - 2010",
-        "description":"Graduation in Philosophy and Human Sciences"
-      }
-
-      
-    ]
-  }
+    "cta": "Show me more",
+    "cta_website": "Show me",
+    "description_header": "Hi ! 👋",
+    "description_1": "I'm Sebastien :) I'm love to work with newest front-end frameworks like React and Next.js to make Internet a prettier place. ",
+    "description_2": "Welcome on my portfolio, where you can discover all of the projects I've been working on.",
+    "description_3": " I'll be more than happy to help you to build your website, give you advice on your SEO and do some web analysis.",
+    "description_4": "Let's get in touch ! 📨",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experiences": "Experiences"
+    }
+  },
+  "projects": [
+    {
+      "title": "Kasa",
+      "startDate": "2023",
+      "description": "A project inspired by Airbnb, to choose and book accommodations and have dreamed vacations ! Done in React, Typescript and Sass !",
+      "images": [
+        "images/portfolio/kasa/kasa-p1.png",
+        "images/portfolio/kasa/kasa-p2.png"
+      ],
+      "alt": "kasa image",
+      "url": "https://kasa.seawebstudio.com",
+      "linkCTA": "Go to website",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-sass-original",
+          "name": "Sass"
+        }
+      ]
+    },
+    {
+      "title": "Vieux-Grimoire",
+      "startDate": "2023",
+      "description": "Online book rating website, I've created an API to communicate with the website's back-end and database, using Node.js and MongoDb.",
+      "images": [
+        "images/portfolio/vieux-grimoire/p1.png",
+        "images/portfolio/vieux-grimoire/p2.png"
+      ],
+      "url": "https://vieux-grimoire.seawebstudio.com",
+      "linkCTA": "Go to website",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-nodejs-plain",
+          "name": "Node.js"
+        },
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDb"
+        }
+      ]
+    },
+    {
+      "title": "Nina Carducci - Photographer",
+      "startDate": "2023",
+      "description": "One of the first project I've done in my scholarship. I improved the SEO, global speed & security for a photographer's website and fixed a few bugs.",
+      "images": [
+        "images/portfolio/nina-carducci-portfolio/nina-p1.png",
+        "images/portfolio/nina-carducci-portfolio/nina-p2.png"
+      ],
+      "url": "https://nina-carducci.seawebstudio.com",
+      "linkCTA": "Go to website",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "Html5"
+        },
+        {
+          "class": "devicon-sass-original",
+          "name": "Sass"
+        },
+        {
+          "class": "devicon-jquery-plain-wordmark",
+          "name": "JQuery"
+        }
+      ]
+    },
+    {
+      "title": "Booki",
+      "startDate": "2023",
+      "description": "A simple and responsive landing-page for booking accomodations for a nice city-trip !",
+      "images": [
+        "images/portfolio/booki/p1.png",
+        "images/portfolio/booki/p2.png"
+      ],
+      "url": "https://booki.seawebstudio.com",
+      "linkCTA": "Go to website",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "Html 5"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "Css 3"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "OpenClassrooms",
+      "title": "Full-Stack Developper Scholarship",
+      "years": "01.2023 - present",
+      "description": "Web-Development Graduation, Full-Stack Developer",
+      "mainTech": [
+        "React"
+      ],
+      "technologies": [
+        "React, ",
+        "JavaScript, ",
+        "Sass, ",
+        "Bootstrap, ",
+        "Material Design, ",
+        "NodeJs, ",
+        "REST API, ",
+        "Express.Js, ",
+        "MongoDb, ",
+        "Git & Github, ",
+        "Agile Methodology"
+      ]
+    },
+    {
+      "company": "Code Academy",
+      "title": "Full-Stack Developper Course",
+      "years": "09.2022 - 01.2023",
+      "description": "Web-Development Graduation, Web-Developer",
+      "mainTech": [
+        "Javascript"
+      ],
+      "technologies": [
+        "HTML5, ",
+        "CSS3, ",
+        "JavaScript, ",
+        "NodeJs, ",
+        "Sass, ",
+        "Git & Github"
+      ]
+    },
+    {
+      "company": "Université Paris 1 Sorbonne",
+      "title": "Bachelor of Philosophy",
+      "years": "2007 - 2010",
+      "description": "Graduation in Philosophy and Human Sciences"
+    }
+  ]
+}

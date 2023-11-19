@@ -13,12 +13,11 @@ import primaryLangDatas from './assets/datas/res_primaryLanguage.json';
 import secondaryLangDatas from '../src/assets/datas/res_secondaryLanguage.json';
 
 import './styles/main.scss';
-import ActionAreaCard from './components/Projects2';
 
 function App() {
   return (
     <main>
-      <Header />
+      <Header datas={primaryLangDatas}/>
       <Banner datas={primaryLangDatas} />
       <About datas={primaryLangDatas} />
       <Projects datas={primaryLangDatas} />

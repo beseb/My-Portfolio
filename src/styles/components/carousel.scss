@@ -1,0 +1,23 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.carousel_container{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+
+    .left-btn-container, .right-btn-container{
+        height: 100%;
+        width: 10%;
+        background-color: red;
+    }
+    .--btnPrev,.--btnNext{
+        height: 50%;
+        width: 50%;
+    }
+    image{
+        object-fit: cover;
+    }
+}

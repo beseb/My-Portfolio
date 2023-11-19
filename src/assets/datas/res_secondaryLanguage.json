@@ -28,6 +28,7 @@
         "images/portfolio/kasa/kasa-p2.png"
       ],
       "url": "https://kasa.seawebstudio.com",
+      "linkCTA": "Voir le site",
       "technologies": [
         {
           "class": "devicon-react-original",
@@ -52,6 +53,7 @@
         "images/portfolio/vieux-grimoire/p2.png"
       ],
       "url": "https://vieux-grimoire.seawebstudio.com",
+      "linkCTA": "Voir le site",
       "technologies": [
         {
           "class": "devicon-react-original",
@@ -76,6 +78,7 @@
         "images/portfolio/nina-carducci-portfolio/nina-p2.png"
       ],
       "url": "https://nina-carducci.seawebstudio.com",
+      "linkCTA": "Voir le site",
       "technologies": [
         {
           "class": "devicon-html5-plain",
@@ -100,6 +103,7 @@
         "images/portfolio/booki/p2.png"
       ],
       "url": "https://booki.seawebstudio.com",
+      "linkCTA": "Voir le site",
       "technologies": [
         {
           "class": "devicon-html5-plain",

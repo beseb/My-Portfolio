@@ -1,34 +1,35 @@
-import '../styles/main.scss';
-import '../styles/components/projects.scss'
-import Card from './Card';
-
 /* eslint-disable react/prop-types */
+import '../styles/main.scss';
+import '../styles/components/projects.scss';
+import Card from './Card';
+import Modal from './Modal';
+import { useState } from 'react';
+
 function Projects({ datas }) {
-  let projects = datas.projects;
+  const [openProjectId, setOpenProjectId] = useState(null);
 
-  let projectItems = projects.map((project, index) => {
-    let techs = project.technologies.map((tech, techIndex) => (
-      <span key={techIndex} className={tech.class}>
-        {tech.name}
-      </span>
-    ));
+  const handleCardClick = (index) => {
+    setOpenProjectId(index); // Définir l'ID du projet ouvert sur l'index actuel
+  };
 
-    let images = project.images.map((image, imageIndex) => (
-      <img key={imageIndex} src={image} alt={`Project ${index}`} />
-    ));
+  const handleCloseModal = () => {
+    setOpenProjectId(null); // Réinitialiser l'ID du projet ouvert
+  };
 
+  const projects = datas.projects.map((project, index) => {
     return (
-      <li key={index}>
-        <Card {...project} techs={techs} images={images} cta={datas.basic_info.cta_website}>
-        </Card>
+      <li key={index} id='project-card' onClick={() => handleCardClick(index)}>
+        <Card datas={project} />
+        <Modal isOpen={openProjectId === index} setIsOpen={handleCloseModal} project={project} />
       </li>
     );
   });
 
-  return <section className="projects-section" id="projects">
-    <h2 className='section-title'>{datas.basic_info.section_name.projects}</h2>
-    <ul style={{listStyle:"none"}}>{projectItems}</ul>
-  </section>;
+  return (
+    <section className='projects-section'>
+      <ul>{projects}</ul>
+    </section>
+  );
 }
 
 export default Projects;
