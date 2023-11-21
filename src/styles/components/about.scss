@@ -1,55 +1,75 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
-.about-section{
-    background-color: $secondary-background-color;
-    margin: 0;
-    height: 60vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: flex-start;
-    margin: auto;
-    padding: 10px;
-    &_title{
-        grid-row: 1/2;
-        grid-column: 1/2;
+.about-section {
+  background-image: url('/images/wave1.svg');
+  background-size: cover;
+  //   background-repeat: no-repeat;
+  background-position: center;
+  background-color: $primary-background-color;
+  margin: 0;
+  height: 60vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: flex-start;
+  margin: auto;
+  padding: 10px;
+  &_title {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+    float: left;
+    margin-left: 2vh;
+  }
+  &_picture {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .outerCircle {
+      background-color: white;
+      border-radius: 50%;
+      width: 15vw;
+      height: 15vw;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      overflow: hidden;
+      z-index: 20;
+
+      .innerCircle {
         position: relative;
-        float: left;
-        margin-left: 2vh;
-    }
-    &_picture{
-        grid-column: 1/2;
-        grid-row:  1/3;
-        margin-top: auto;
-        margin-bottom: auto;
-        
-        .circle{
-            width: 20vw;
-            height: 20vw;
-            border-radius: 50%;
-            overflow: hidden;
-            
-            img{
-                object-fit: cover;
-                height: 120%;
-                width: 100%;
-            }
+        width: 98%;
+        height: 98%;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          object-fit: cover;
+          height: 120%;
+          width: 100%;
         }
+      }
     }
-    &_content{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        width: fit-content;
-        word-wrap:break-word;
-        padding: 15px;
-        h3,h4{
-            color: white;
-        }
+  }
+  &_content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    word-wrap: break-word;
+    padding: 15px;
+    h3,
+    h4 {
+      color: $primary-font-color;
     }
+  }
 }

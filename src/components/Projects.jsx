@@ -28,6 +28,7 @@ function Projects({ datas }) {
 
   return (
     <section className='projects-section'>
+      <h2 className='section-title'>{datas.basic_info.section_name.projects}</h2>
       <ul>{projects}</ul>
     </section>
   );

@@ -2,6 +2,8 @@
 @import '../mixins.scss';
 
 .experiences-section {
+  background-image: url('/images/wave4.svg');
+    background-size: cover;
   .section-title {
     margin-left: 2vw;
   }

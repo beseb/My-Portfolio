@@ -3,14 +3,15 @@
 
 .carouselWrapper {
   width: 100%;
-  height: auto;
+  height: 50%;
   .carousel {
     width: 100%;
     max-height: 50%;
-  }
-  .carouselImage {
-    height: 100%;
-    width: 100%;
+
+    .carouselImage {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
