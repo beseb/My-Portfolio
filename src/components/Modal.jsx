@@ -21,7 +21,7 @@ function Modal({ isOpen, setIsOpen, project }) {
         <h3 className='modal_wrapper--title'>{project.title}</h3>
       <ImageCarousel className='.image-carousel' data={project}/>
         <div className='modal_wrapper_content'>
-          <p className='modal_wrapper_content--startDate'>
+          <p className='modal_wrapper_content--startDate italic'>
             {project.startDate}
           </p>
           <p className='modal_wrapper_content--description'>
@@ -32,7 +32,7 @@ function Modal({ isOpen, setIsOpen, project }) {
               return (
                 <li key={index}>
                   <i className={tech.class} />
-                  <span>{tech.name}</span>
+                  <span className='bold'> {tech.name}</span>
                 </li>
               );
             })}

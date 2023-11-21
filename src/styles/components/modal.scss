@@ -48,14 +48,24 @@
         border-radius: $border-radius;
         background-color: $button-background-color;
         text-align: center;
-        color: $secondary-font-color;
+        color: $primary-background-color;
         font-family: $secondary-font-family;
         font-weight: 400;
-        font-size: 1.1em;
+        font-size: 1.2em;
         text-decoration: none;
+        place-content: center;
         :visited,
         :active {
           color: $primary-font-color;
+        }
+        &:hover{
+          background-color: $hover-button-background-color;
+         transition: all 0.3s ease-in-out;
+        }
+      }
+      &--techs{
+        i{
+          font-size: 1.8em;
         }
       }
     }
