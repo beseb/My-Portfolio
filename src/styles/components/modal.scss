@@ -19,17 +19,15 @@
   }
   &_wrapper {
     border-radius: $border-radius;
-    z-index: 100;
+    z-index: 2;
     margin: auto;
     height: 70%;
     width: 50%;
-    // padding: 2%;
     background-color: $primary-background-color;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    // gap: 5%;
     &--btnClose {
       position: relative;
       top: 0;

@@ -13,7 +13,7 @@ function Banner({ datas }) {
           loop={Infinity}
           wrapper='h1'
         />
-        <a href='#about' className='btn CTA'><ExpandMoreIcon fontSize='large' color='white' className='CTA'></ExpandMoreIcon></a>
+        <a href='#about' className='btn CTA'><ExpandMoreIcon fontSize='large' color='white' className='CTA'/></a>
       </div>
     </div>
   );

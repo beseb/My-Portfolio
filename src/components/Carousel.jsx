@@ -1,25 +1,26 @@
 /* eslint-disable react/prop-types */
-import '../styles/main.scss';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-function Carousel({ project }) {
-  const images = project.images[0];
+import { width } from '@mui/system';
+import Carousel from 'react-material-ui-carousel';
 
-  const navigateBefore = ()=>{
-    console.log('handleBefore clicked !')
-
+function ImageCarousel({ data }) {
+    const items = data.images;
+   
+    return (
+      <div className="carouselWrapper">
+        <Carousel className='carousel'
+          autoPlay={true}
+          interval={3000}
+          cycleNavigation={true}
+          navButtonsAlwaysVisible={true}
+        >
+          {items.map((item, i) => (
+            <Item key={i} item={item} />
+          ))}
+        </Carousel>
+      </div>
+    );
   }
-  const navigateNext = ()=>{
-    console.log('navigateNext clicked !')
-
-  }
-  
-
-  return (
-    <div className='carousel_container' style={{backgroundImage:{images}, backgroundSize:'cover'}}>
-        <div className="left-btn-container" onClick={navigateBefore}><NavigateBeforeIcon className='--btnPrev'/></div>
-        <div className="right-btn-container" onClick={navigateNext}><NavigateNextIcon className='--btnNext'/></div>
-    </div>
-  );
+export default ImageCarousel;
+function Item({ item }) {
+  return <img src={item} className='carouselImage'/>;
 }
-export default Carousel;

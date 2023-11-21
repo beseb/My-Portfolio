@@ -3,23 +3,24 @@ import seaLogo from '/images/SEA-logo.svg';
 import '../styles/main.scss';
 import MobileNav from '../components/MobileNav';
 
-
 function Header() {
   return (
     <header>
-
-      <img src={seaLogo} alt='Logo SEA Web-Studio' className='seaLogo'/>
+      <img src={seaLogo} alt='Logo SEA Web-Studio' className='seaLogo' />
       <nav className='desktopNav'>
         <a href='#about'>About</a>
+
         <a href='#projects'>Projects</a>
+
         <a href='#experiences'>Experiences</a>
+
         <a href='#contactForm'>Contact</a>
         <div className='nav_buttons'>
           <button className='setLangage'>🚩</button>
           <button className='setThemeColor'>🌙</button>
         </div>
       </nav>
-      <MobileNav/>
+      <MobileNav />
       {/* <div className="langagePickerDiv">
                 <div onClick={()=>{
                     setLangage = "english";

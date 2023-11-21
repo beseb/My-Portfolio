@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Carousel from './Carousel';
+import ImageCarousel from './Carousel';
 import '../styles/main.scss';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -19,7 +19,7 @@ function Modal({ isOpen, setIsOpen, project }) {
           onClick={handleCloseClick}
         />
         <h3 className='modal_wrapper--title'>{project.title}</h3>
-        <Carousel project={project} />
+      <ImageCarousel className='.image-carousel' data={project}/>
         <div className='modal_wrapper_content'>
           <p className='modal_wrapper_content--startDate'>
             {project.startDate}
