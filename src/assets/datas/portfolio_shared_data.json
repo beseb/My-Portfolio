@@ -28,61 +28,61 @@
     "icons": [
       {
         "name": "HTML 5",
-        "class": "devicon-html5-plain",
+        "class": "devicon-html5-plain colored",
         "level": "95",
         "iconColor":"orange"
       },
       {
         "name": "CSS 3",
-        "class": "devicon-css3-plain",
+        "class": "devicon-css3-plain colored",
         "level": "95",
         "iconColor": "blue"
       },
       {
         "name": "JavaScript",
-        "class": "devicon-javascript-plain",
+        "class": "devicon-javascript-plain colored",
         "level": "80",
         "iconColor": "yellow"
         
       },
       {
         "name": "TypeScript",
-        "class": "devicon-typescript-plain",
+        "class": "devicon-typescript-plain colored",
         "level": "80",
         "iconColor": "blue"
 
       },
       {
         "name": "Sass",
-        "class": "devicon-sass-original",
+        "class": "devicon-sass-original colored",
         "level": "90",
         "iconColor": "pink"
 
       },
       {
         "name": "Bootstrap",
-        "class": "devicon-bootstrap-plain",
+        "class": "devicon-bootstrap-plain colored",
         "level": "85",
         "iconColor": "blue"
 
       },
       {
         "name": "React",
-        "class": "devicon-react-original",
+        "class": "devicon-react-original colored",
         "level": "70",
         "iconColor": "cyan"
 
       },
       {
         "name": "NodeJs",
-        "class": "devicon-nodejs-plain",
+        "class": "devicon-nodejs-plain colored",
         "level": "70",
         "iconColor": "green"
 
       },
       {
         "name": "MongoDb",
-        "class": "devicon-mongodb-plain",
+        "class": "devicon-mongodb-plain colored",
         "level": "70",
         "iconColor": "green"
 

@@ -17,7 +17,6 @@ function Projects({ datas }) {
   };
 
   const projects = datas.projects.map((project, index) => {
-
     return (
       <li key={index} id='project-card' onClick={() => handleCardClick(index)}>
         <Card datas={project}  />

@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-import ImageCarousel from './Carousel';
-import '../styles/main.scss';
-import CloseIcon from '@mui/icons-material/Close';
+import ImageCarousel from "./Carousel";
+import "../styles/main.scss";
+import CloseIcon from "@mui/icons-material/Close";
 
-// import AwesomeSlider from 'react-awesome-slider';
-// import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
-// import AwesomeSliderStyles from '../styles/components/dark-slider.scss';
-// import AwesomeSliderStyles2 from '../styles/components/light-slider.scss';
+import AwesomeSlider from "react-awesome-slider";
+import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
+import AwesomeSliderStyles from "../styles/components/dark-slider.scss";
+import AwesomeSliderStyles2 from "../styles/components/light-slider.scss";
 
 function Modal({ isOpen, setIsOpen, project }) {
   // Fonction pour arrêter la propagation et fermer la modal
@@ -14,55 +14,50 @@ function Modal({ isOpen, setIsOpen, project }) {
     event.stopPropagation(); // Empêche le clic de se propager au div.modal_overlay
     setIsOpen(); // Appelle la fonction pour fermer la modal
   };
-  const img = project.images.map((elem, i) => {
-    return <div key={i} data-src={elem} />;
-  });
 
   return (
-    <div className='modal' style={{ display: isOpen ? 'flex' : 'none' }}>
-      <div className='modal_wrapper' onClick={(e) => e.stopPropagation()}>
-        <CloseIcon
-          className='modal_wrapper btnClose'
-          icon='fa-solid faXmark '
-          onClick={handleCloseClick}
-        />
-        <h3 className='modal_wrapper--title'>{project.title}</h3>
+    <div className="modal" style={{ display: isOpen ? "flex" : "none" }}>
+      <div className="modal_wrapper" onClick={(e) => e.stopPropagation()}>
         {/* <ImageCarousel className='.image-carousel' data={project}/> */}
-        {/* <AwesomeSlider
+        <AwesomeSlider
           cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
-          animation='scaleOutAnimation'
-          className='slider-image'
+          bullets={false}
+          animation="scaleOutAnimation"
+          className="awesome-slider"
         >
-          {img};
-        </AwesomeSlider> */}
-        <div className='modal_wrapper_content'>
-          <p className='modal_wrapper_content--startDate italic'>
-            {project.startDate}
-          </p>
-          <p className='modal_wrapper_content--description'>
+          {project.images.map((image, index) => {
+            return (
+              <div className="slider-item" data-src={image} key={index}></div>
+            );
+          })}
+        </AwesomeSlider>
+        <div className="modal_wrapper_content">
+          <h3 className="modal_wrapper--title">{project.title}</h3>
+
+          <p className="modal_wrapper_content--description">
             {project.description}
           </p>
-          <ul className='modal_wrapper_content--techs'>
+          <ul className="modal_wrapper_content--techs">
             {project.technologies.map((tech, index) => {
               return (
                 <li key={index}>
                   <i className={tech.class} />
-                  <span className='bold'> {tech.name}</span>
+                  <span className="bold"> {tech.name}</span>
                 </li>
               );
             })}
           </ul>
           <a
             href={project.url}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='modal_wrapper_content--linkCTA'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="modal_wrapper_content--linkCTA"
           >
             {project.linkCTA}
           </a>
         </div>
       </div>
-      <div className='modal_overlay' onClick={handleCloseClick}></div>
+      <div className="modal_overlay" onClick={handleCloseClick}></div>
     </div>
   );
 }

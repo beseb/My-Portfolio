@@ -36,15 +36,15 @@
       "linkCTA": "Go to website",
       "technologies": [
         {
-          "class": "devicon-react-original",
+          "class": "devicon-react-original colored",
           "name": "React"
         },
         {
-          "class": "devicon-typescript-plain",
+          "class": "devicon-typescript-plain colored",
           "name": "TypeScript"
         },
         {
-          "class": "devicon-sass-original",
+          "class": "devicon-sass-original colored",
           "name": "Sass"
         }
       ]
@@ -62,15 +62,15 @@
       "linkCTA": "Go to website",
       "technologies": [
         {
-          "class": "devicon-react-original",
+          "class": "devicon-react-original colored",
           "name": "React"
         },
         {
-          "class": "devicon-nodejs-plain",
+          "class": "devicon-nodejs-plain colored",
           "name": "Node.js"
         },
         {
-          "class": "devicon-mongodb-plain",
+          "class": "devicon-mongodb-plain colored",
           "name": "MongoDb"
         }
       ]
@@ -88,15 +88,15 @@
       "linkCTA": "Go to website",
       "technologies": [
         {
-          "class": "devicon-html5-plain",
+          "class": "devicon-html5-plain colored",
           "name": "Html5"
         },
         {
-          "class": "devicon-sass-original",
+          "class": "devicon-sass-original colored",
           "name": "Sass"
         },
         {
-          "class": "devicon-jquery-plain-wordmark",
+          "class": "devicon-jquery-plain-wordmark colored",
           "name": "JQuery"
         }
       ]
@@ -114,11 +114,11 @@
       "linkCTA": "Go to website",
       "technologies": [
         {
-          "class": "devicon-html5-plain",
+          "class": "devicon-html5-plain colored",
           "name": "Html 5"
         },
         {
-          "class": "devicon-css3-plain",
+          "class": "devicon-css3-plain colored",
           "name": "Css 3"
         }
       ]

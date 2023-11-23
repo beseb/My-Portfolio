@@ -38,6 +38,8 @@
         }
         .name{
           font-size: 1em;
+          font-family: $secondary-font-family;
+          font-weight: bold;
           word-break: keep-all;
         }
       }
