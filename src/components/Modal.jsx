@@ -3,12 +3,20 @@ import ImageCarousel from './Carousel';
 import '../styles/main.scss';
 import CloseIcon from '@mui/icons-material/Close';
 
+// import AwesomeSlider from 'react-awesome-slider';
+// import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
+// import AwesomeSliderStyles from '../styles/components/dark-slider.scss';
+// import AwesomeSliderStyles2 from '../styles/components/light-slider.scss';
+
 function Modal({ isOpen, setIsOpen, project }) {
   // Fonction pour arrêter la propagation et fermer la modal
   const handleCloseClick = (event) => {
     event.stopPropagation(); // Empêche le clic de se propager au div.modal_overlay
     setIsOpen(); // Appelle la fonction pour fermer la modal
   };
+  const img = project.images.map((elem, i) => {
+    return <div key={i} data-src={elem} />;
+  });
 
   return (
     <div className='modal' style={{ display: isOpen ? 'flex' : 'none' }}>
@@ -19,7 +27,14 @@ function Modal({ isOpen, setIsOpen, project }) {
           onClick={handleCloseClick}
         />
         <h3 className='modal_wrapper--title'>{project.title}</h3>
-      <ImageCarousel className='.image-carousel' data={project}/>
+        {/* <ImageCarousel className='.image-carousel' data={project}/> */}
+        {/* <AwesomeSlider
+          cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
+          animation='scaleOutAnimation'
+          className='slider-image'
+        >
+          {img};
+        </AwesomeSlider> */}
         <div className='modal_wrapper_content'>
           <p className='modal_wrapper_content--startDate italic'>
             {project.startDate}

@@ -17,7 +17,7 @@ header {
     width: 10%;
   }
   // regle pour l'underline des nav a
-  nav a:hover{
+  nav a:hover {
     text-decoration: none;
   }
   .desktopNav {
@@ -53,7 +53,7 @@ header {
         width: 100%;
         height: 3px;
         border-radius: 4px;
-        background-color: #18272f;
+        background-color: coral;
         bottom: 0;
         left: 0;
         transform-origin: right;
@@ -66,6 +66,7 @@ header {
         transform-origin: left;
         transform: scaleX(1);
         text-decoration: none;
+        
       }
     }
 
