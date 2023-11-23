@@ -16,7 +16,10 @@
       "projects": "Projets",
       "skills": "Skills",
       "experience": "Expérience"
-    }
+    },
+    "mail" : "Votre adresse e-mail",
+    "message": "Votre message",
+    "contactName": "Votre nom"
   },
   "projects": [
     {

@@ -1,4 +1,7 @@
 {
+  "mail": "Your e-mail adress",
+  "message": "Your message",
+  "contact": "Your name",
   "basic_info": {
     "name": "Sébastien ESCUDERO",
     "title": [
@@ -19,7 +22,8 @@
     }
   },
   "projects": [
-    { "id":"1",
+    {
+      "id": "1",
       "title": "Kasa",
       "startDate": "2023",
       "description": "A project inspired by Airbnb, to choose and book accommodations and have dreamed vacations ! Done in React, Typescript and Sass !",
@@ -46,7 +50,7 @@
       ]
     },
     {
-      "id":"2",
+      "id": "2",
       "title": "Vieux-Grimoire",
       "startDate": "2023",
       "description": "Online book rating website, I've created an API to communicate with the website's back-end and database, using Node.js and MongoDb.",
@@ -72,7 +76,7 @@
       ]
     },
     {
-      "id":"3",
+      "id": "3",
       "title": "Nina Carducci - Photographer",
       "startDate": "2023",
       "description": "One of the first project I've done in my scholarship. I improved the SEO, global speed & security for a photographer's website and fixed a few bugs.",
@@ -98,7 +102,7 @@
       ]
     },
     {
-      "id":"4",
+      "id": "4",
       "title": "Booki",
       "startDate": "2023",
       "description": "A simple and responsive landing-page for booking accomodations for a nice city-trip !",

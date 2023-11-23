@@ -2,6 +2,9 @@
 import seaLogo from '/images/SEA-logo.svg';
 import '../styles/main.scss';
 import MobileNav from '../components/MobileNav';
+import LanguageIcon from '@mui/icons-material/Language';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import Brightness2Icon from '@mui/icons-material/Brightness2';
 
 function Header() {
   return (
@@ -14,10 +17,10 @@ function Header() {
 
         <a href='#experiences'>Experiences</a>
 
-        <a href='#contactForm'>Contact</a>
+        <a href='#contact'>Contact</a>
         <div className='nav_buttons'>
-          <button className='setLangage'>🚩</button>
-          <button className='setThemeColor'>🌙</button>
+          <a className='setLangage'><LanguageIcon/></a>
+          <a className='setThemeColor'><WbSunnyIcon/></a>
         </div>
       </nav>
       <MobileNav />

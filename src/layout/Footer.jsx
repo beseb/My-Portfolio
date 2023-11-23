@@ -25,9 +25,9 @@ function Footer() {
           >
             <FontAwesomeIcon icon={faLinkedin} style={{height:'3em', color:"blue"}}/>
           </a>
-          <button>
+          <a href='#contact' >
             <FontAwesomeIcon icon={faEnvelope} style={{height:'3em', color:"black", border:"none"}}/>
-          </button>
+          </a>
         </div>
 
         <span className='copyright'>

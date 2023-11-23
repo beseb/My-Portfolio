@@ -1,0 +1,127 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.contactForm {
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  fieldset{
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  img {
+    height: 10em;
+    width: auto;
+  }
+  &_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  &_wrapper {
+    border-radius: $border-radius;
+    z-index: 2;
+    margin: auto;
+    height: 80%;
+    width: 50%;
+    background-color: $primary-background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .btnClose {
+      position: relative;
+      top: 3%;
+      right: -45%;
+      font-size: 2em;
+      &:hover {
+        opacity: 0.8;
+        font-size: 2.5em;
+        transition: font-size 0.15s ease-in-out;
+      }
+      &:active {
+        opacity: 1;
+      }
+    }
+
+    .contactForm_header {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 20vh;
+      align-items: center;
+
+      .SEALogo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 1.8em;
+        margin: 0;
+        padding:0;
+      }
+      .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: fit-content;
+        gap: 0.5em;
+      }
+      & .infos {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: fit-content;
+
+        & .imgMap {
+          height: 20vh;
+          margin-left: 2em;
+        }
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 70%;
+      width: 100%;
+      font-family: $secondary-font-family;
+      input {
+        min-height: 4vh;
+      }
+      #submit {
+        width: 6vw;
+        font-size: 1.5em;
+        border-radius: $border-radius;
+        color: $primary-background-color;
+        background-color: $button-background-color;
+        &:hover {
+          opacity: 0.6;
+          transition: opacity 0.15s ease-in-out;
+        }
+        &:active {
+          opacity: 1;
+        }
+      }
+
+      .form-content {
+        margin-left: 3em;
+        margin-right: 3em;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+      }
+      #message {
+        height: 20vh;
+        width: 100%;
+      }
+    }
+  }
+}

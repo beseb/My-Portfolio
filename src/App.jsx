@@ -14,6 +14,7 @@ import secondaryLangDatas from '../src/assets/datas/res_secondaryLanguage.json';
 
 import './styles/main.scss';
 
+import { FormspreeProvider } from '@formspree/react';
 function App() {
   return (
     <main>
@@ -24,7 +25,7 @@ function App() {
       {/* <ActionAreaCard datas={primaryLangDatas}/> */}
       <ExperiencesVertical datas={primaryLangDatas}/>
       <Skills datas={sharedDatas} />
-      <ContactForm />
+      
       <Footer />
     </main>
   );

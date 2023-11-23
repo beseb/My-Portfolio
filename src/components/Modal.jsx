@@ -22,7 +22,7 @@ function Modal({ isOpen, setIsOpen, project }) {
     <div className='modal' style={{ display: isOpen ? 'flex' : 'none' }}>
       <div className='modal_wrapper' onClick={(e) => e.stopPropagation()}>
         <CloseIcon
-          className='modal_wrapper--btnClose'
+          className='modal_wrapper btnClose'
           icon='fa-solid faXmark '
           onClick={handleCloseClick}
         />
