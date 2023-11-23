@@ -9,7 +9,7 @@ function Banner({ datas }) {
       <img src={seaLogo} alt='Logo SEA Web-Studio' />
       <div className='content'>
         <Typical
-          steps={['Web Developper', 1200, 'Web Developper & Web Designer', 800]}
+          steps={['Web Dev', 1200, 'Web Developper & Designer', 800]}
           loop={Infinity}
           wrapper='h1'
         />

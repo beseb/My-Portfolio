@@ -10,7 +10,7 @@
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  fieldset{
+  fieldset {
     border: none;
     width: 100%;
     display: flex;
@@ -44,14 +44,6 @@
       top: 3%;
       right: -45%;
       font-size: 2em;
-      &:hover {
-        opacity: 0.8;
-        font-size: 2.5em;
-        transition: font-size 0.15s ease-in-out;
-      }
-      &:active {
-        opacity: 1;
-      }
     }
 
     .contactForm_header {
@@ -65,7 +57,7 @@
         grid-row: 1/2;
         font-size: 1.8em;
         margin: 0;
-        padding:0;
+        padding: 0;
       }
       .content {
         display: flex;
@@ -102,13 +94,6 @@
         border-radius: $border-radius;
         color: $primary-background-color;
         background-color: $button-background-color;
-        &:hover {
-          opacity: 0.6;
-          transition: opacity 0.15s ease-in-out;
-        }
-        &:active {
-          opacity: 1;
-        }
       }
 
       .form-content {

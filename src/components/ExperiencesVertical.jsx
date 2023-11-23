@@ -20,7 +20,7 @@ function ExperiencesVertical({ datas }) {
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', borderRadius:'15px' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date={datas.experience[0].years} 
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          iconStyle={{ background: 'rgba(33,110,179,1)', color: '#fff' }}
           icon={<WorkIcon />}
         >
           <h3 className='vertical-timeline-element-title'>
@@ -39,7 +39,7 @@ function ExperiencesVertical({ datas }) {
           className='vertical-timeline-element--work'
           date={datas.experience[1].years}
           contentStyle={{borderRadius:'15px'}}
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          iconStyle={{ background: 'rgba(33,130,155,1)', color: '#fff' }}
           icon={<WorkIcon />}
         >
           <h3 className='vertical-timeline-element-title'>
@@ -58,7 +58,7 @@ function ExperiencesVertical({ datas }) {
           className='vertical-timeline-element--education'
           date={datas.experience[2].years}
           contentStyle={{borderRadius:'15px'}}
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+          iconStyle={{ backgroundColor: 'rgba(33,155,136,1)', color: '#fff' }}
           icon={<SchoolIcon />}
         >
           <h3 className='vertical-timeline-element-title'>

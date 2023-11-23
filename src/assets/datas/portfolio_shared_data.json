@@ -39,17 +39,17 @@
         "iconColor": "blue"
       },
       {
-        "name": "TypeScript",
-        "class": "devicon-typescript-plain",
-        "level": "80",
-        "iconColor": "blue"
-
-      },
-      {
         "name": "JavaScript",
         "class": "devicon-javascript-plain",
         "level": "80",
         "iconColor": "yellow"
+        
+      },
+      {
+        "name": "TypeScript",
+        "class": "devicon-typescript-plain",
+        "level": "80",
+        "iconColor": "blue"
 
       },
       {
