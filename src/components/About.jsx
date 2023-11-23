@@ -3,18 +3,12 @@ import "../styles/main.scss";
 import myPhoto from "/images/my-photo.png";
 import FileOpenIcon from "@mui/icons-material/FileOpen";
 import EmailIcon from "@mui/icons-material/Email";
-import { useState } from "react";
 import Contact from "./ContactForm";
 
-function About({ datas }) {
-  const [isOpenContact, setIsOpenContact] = useState(null);
-
+function About({ datas, isContactOpen, setIsContactOpen }) {
+  
   const handleOpenContact = () => {
-    setIsOpenContact(true);
-  };
-
-  const handleCloseContact = () => {
-    setIsOpenContact(null);
+    setIsContactOpen(true);
   };
 
   return (
@@ -46,13 +40,13 @@ function About({ datas }) {
               </strong>
             </h4>
           </a>
-          {/* <FormspreeProvider project="2346908508634480159"> */}
+          {isContactOpen && (
             <Contact
-              isOpenContact={isOpenContact}
-              setIsOpenContact={setIsOpenContact}
-              datas={{ datas }}
+              isContactOpen={isContactOpen}
+              setIsContactOpen={setIsContactOpen}
+              datas={datas}
             />
-          {/* </FormspreeProvider> */}
+          )}
           <a href="/CV_ESCUDERO_Sebastien.pdf" download>
             <FileOpenIcon className="--icons" />
             <h4>

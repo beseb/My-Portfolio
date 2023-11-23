@@ -17,6 +17,7 @@
       "skills": "Skills",
       "experience": "Expérience"
     },
+    "language_flag" : "/icons/france-flag-icon.svg",
     "mail" : "Votre adresse e-mail",
     "message": "Votre message",
     "contactName": "Votre nom"

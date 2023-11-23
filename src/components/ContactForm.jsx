@@ -12,21 +12,21 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import SendIcon from "@mui/icons-material/Send";
 import imgMap from "/images/map.jpg";
 
-function ContactForm({ datas, isOpenContact, setIsOpenContact }) {
+function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
   // Fonction pour arrêter la propagation et fermer la modal
   const handleCloseClick = (event) => {
     event.stopPropagation(); // Empêche le clic de se propager au div.modal_overlay
-    setIsOpenContact(); // Appelle la fonction pour fermer la modal
+    setIsContactOpen(); // Appelle la fonction pour fermer la modal
   };
   const [state, handleSubmit] = useForm("contactForm");
   if (state.succeeded) {
     console.log("btn clicked");
-    return alert('Thank you for your message !');
+    return alert("Thank you for your message !");
   }
   return (
     <div
       className="contactForm"
-      style={{ display: isOpenContact ? "flex" : "none" }}
+      style={{ display: isContactOpen ? "flex" : "none" }}
     >
       <div className="contactForm_wrapper" onClick={(e) => e.stopPropagation()}>
         <CloseIcon
@@ -112,13 +112,13 @@ function ContactForm({ datas, isOpenContact, setIsOpenContact }) {
   );
 }
 
-function Contact({ datas, isOpenContact, setIsOpenContact }) {
+function Contact({ datas, isContactOpen, setIsContactOpen }) {
   return (
     <FormspreeProvider project="2346908508634480159">
       <ContactForm
         datas={datas}
-        isOpenContact={isOpenContact}
-        setIsOpenContact={setIsOpenContact}
+        isContactOpen={isContactOpen}
+        setIsContactOpen={setIsContactOpen}
       />
     </FormspreeProvider>
   );

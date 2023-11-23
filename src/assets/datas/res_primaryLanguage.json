@@ -1,7 +1,5 @@
 {
-  "mail": "Your e-mail adress",
-  "message": "Your message",
-  "contact": "Your name",
+  
   "basic_info": {
     "name": "Sébastien ESCUDERO",
     "title": [
@@ -19,7 +17,11 @@
       "projects": "Projects",
       "skills": "Skills",
       "experiences": "Experiences"
-    }
+    },
+    "mail": "Your e-mail adress",
+    "message": "Your message",
+    "contact": "Your name",
+    "language_flag" : "/icons/united-kingdom-flag-icon.svg"
   },
   "projects": [
     {
