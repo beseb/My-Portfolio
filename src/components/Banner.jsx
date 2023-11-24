@@ -3,12 +3,16 @@ import Typical from 'react-typical';
 import '../styles/main.scss';
 import seaLogo from '/images/SEA-logo.png';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-function Banner({ datas }) {
+
+function Banner() {
+
+
   return (
     <div className='banner-section'>
       <img src={seaLogo} alt='Logo SEA Web-Studio' />
       <div className='content'>
         <Typical
+        // CHANGEZ LES WEB DEVELOPPER EN FR ET EN ANGLAIS // 
           steps={['Web Developper', 1200, 'Web Developper & Designer', 800, 'Web Developper & Creator', 800]}
           loop={Infinity}
           wrapper='h1'

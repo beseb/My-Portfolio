@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Contact from "../components/ContactForm";
+
 /* eslint-disable react/prop-types */
 
-function Footer({datas, isContactOpen, setIsContactOpen }) {
+function Footer({ isContactOpen, setIsContactOpen }) {
+
   const handleOpenContact = () => {
     setIsContactOpen(true);
   };

@@ -10,12 +10,12 @@
     "description_1": " Je suis Sébastien Escudero :) J'aime travailler avec les derniers frameworks front-end comme React et Next.js pour faire du Web un plus bel endroit.",
     "description_2": " Bienvenue sur mon portfolio, où vous pouvez découvrir tous les projets web sur lesquels j'ai travaillé.",
     "description_3": "Je serai plus que ravi de vous aider dans votre projet web, de vous donner des conseils sur votre référencement SEO et d'améliorer les performances de votre site web.",
-    "description_4": "Mettons-nous en contact ! 📨",
+    "description_4": "Mettons-nous en contact !",
     "section_name": {
       "about": "A Propos",
       "projects": "Projets",
       "skills": "Skills",
-      "experience": "Expérience"
+      "experience": "Experiences"
     },
     "language_flag" : "/icons/france-flag-icon.svg",
     "mail" : "Votre adresse e-mail",

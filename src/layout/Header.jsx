@@ -7,22 +7,27 @@ import FrFlag from "/icons/france-flag-icon.svg";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import Brightness2Icon from "@mui/icons-material/Brightness2";
 import Contact from "../components/ContactForm";
+import { useContext } from "react";
+import { LangContext } from "../utils/LangContext";
 
-function Header({ datas, isContactOpen, setIsContactOpen }) {
+function Header({ isContactOpen, setIsContactOpen }) {
+  const { lang, toggleLang, datas } = useContext(LangContext);
+
   const handleOpenContact = () => {
     setIsContactOpen(true);
   };
+
   return (
     <header>
       <img src={seaLogo} alt="Logo SEA Web-Studio" className="seaLogo" />
       <nav className="desktopNav">
-        <a href="#about">About</a>
+        <a href="#about">{datas.basic_info.section_name.about}</a>
 
-        <a href="#projects">Projects</a>
+        <a href="#projects">{datas.basic_info.section_name.projects}</a>
 
-        <a href="#experiences">Experiences</a>
+        <a href="#experiences">{datas.basic_info.section_name.experience}</a>
 
-        <a onClick={handleOpenContact} style={{cursor:'pointer'}}>
+        <a onClick={handleOpenContact} style={{ cursor: "pointer" }}>
           Contact
         </a>
         {isContactOpen && (
@@ -33,8 +38,8 @@ function Header({ datas, isContactOpen, setIsContactOpen }) {
           />
         )}
         <div className="nav_buttons">
-          <a className="setLangage">
-            <img src={UkFlag}></img>
+          <a className="setLangage" onClick={toggleLang}>
+            <img src={lang ? UkFlag : FrFlag} />
           </a>
           <a className="setThemeColor">
             <WbSunnyIcon />

@@ -8,7 +8,9 @@ import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import '../styles/main.scss';
 
-function ExperiencesVertical({ datas }) {
+function ExperiencesVertical() {
+
+
   return (
     <section className='experiences-section' id='experiences'>
       <h2 className='section-title'>

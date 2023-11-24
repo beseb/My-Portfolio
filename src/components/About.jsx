@@ -5,8 +5,9 @@ import FileOpenIcon from "@mui/icons-material/FileOpen";
 import EmailIcon from "@mui/icons-material/Email";
 import Contact from "./ContactForm";
 
-function About({ datas, isContactOpen, setIsContactOpen }) {
-  
+function About({ isContactOpen, setIsContactOpen }) {
+
+
   const handleOpenContact = () => {
     setIsContactOpen(true);
   };

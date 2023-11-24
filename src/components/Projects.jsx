@@ -5,7 +5,8 @@ import Card from './Card';
 import Modal from './Modal';
 import { useState, useEffect } from 'react';
 
-function Projects({ datas }) {
+function Projects() {
+
   const [openProjectId, setOpenProjectId] = useState(null);
 
   const handleCardClick = (index) => {

@@ -9,41 +9,42 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 import sharedDatas from "./assets/datas/portfolio_shared_data.json";
-import primaryLangDatas from "./assets/datas/res_primaryLanguage.json";
-import secondaryLangDatas from "../src/assets/datas/res_secondaryLanguage.json";
+import eng_Datas from "./assets/datas/primaryLanguage.json";
+import fr_Datas from "./assets/datas/secondaryLanguage.json";
 
 import "./styles/main.scss";
-import { createContext } from "react";
 import { useState } from "react";
 import { useContext } from "react";
-import ContactContext from "./components/ContactContext";
+import ContactContext from "./utils/ContactContext";
+import { LangProvider } from "./utils/LangContext";
 
 function App() {
   const contactCxt = useContext(ContactContext);
+
   const [isContactOpen, setIsContactOpen] = useState(contactCxt);
 
   return (
     <main>
       <ContactContext.Provider value={{ isContactOpen, setIsContactOpen }}>
-        <Header
-          datas={primaryLangDatas}
-          isContactOpen={isContactOpen}
-          setIsContactOpen={setIsContactOpen}
-        />
-        <Banner datas={primaryLangDatas} />
+        <LangProvider >
+          <Header
+            isContactOpen={isContactOpen}
+            setIsContactOpen={setIsContactOpen}
+           
+          />
+          {/* <Banner />
         <About
-          datas={primaryLangDatas}
           isContactOpen={isContactOpen}
           setIsContactOpen={setIsContactOpen}
         />
-        <Projects datas={primaryLangDatas} />
-        <ExperiencesVertical datas={primaryLangDatas} />
+        <Projects />
+        <ExperiencesVertical />
         <Skills datas={sharedDatas} />
         <Footer
-        datas={sharedDatas}
           isContactOpen={isContactOpen}
           setIsContactOpen={setIsContactOpen}
-        />
+        /> */}
+        </LangProvider>
       </ContactContext.Provider>
     </main>
   );
