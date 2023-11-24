@@ -15,6 +15,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (max-width:768px) {
+    min-height: 80vh;
+  }
   .content {
     margin-top: -10em; 
     display: flex;
