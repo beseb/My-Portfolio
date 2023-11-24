@@ -1,22 +1,15 @@
 import Header from "../src/layout/Header";
 import Footer from "../src/layout/Footer";
-
-import About from "../src/components/About";
-import Banner from "../src/components/Banner";
-import ContactForm from "./components/ContactForm";
-import ExperiencesVertical from "./components/ExperiencesVertical";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-
+import About from "./sections/About";
+import Banner from "./sections/Banner";
+import ExperiencesVertical from "./sections/ExperiencesVertical";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 import sharedDatas from "./assets/datas/portfolio_shared_data.json";
-import eng_Datas from "./assets/datas/primaryLanguage.json";
-import fr_Datas from "./assets/datas/secondaryLanguage.json";
-
-import "./styles/main.scss";
-import { useState } from "react";
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import ContactContext from "./utils/ContactContext";
 import { LangProvider } from "./utils/LangContext";
+import "./styles/main.scss";
 
 function App() {
   const contactCxt = useContext(ContactContext);
@@ -26,24 +19,23 @@ function App() {
   return (
     <main>
       <ContactContext.Provider value={{ isContactOpen, setIsContactOpen }}>
-        <LangProvider >
+        <LangProvider>
           <Header
             isContactOpen={isContactOpen}
             setIsContactOpen={setIsContactOpen}
-           
           />
           <Banner />
-         <About
-         isContactOpen={isContactOpen}
-           setIsContactOpen={setIsContactOpen}
-        />
-         <Projects />
-         <ExperiencesVertical />
-         <Skills datas={sharedDatas} />
-         <Footer
-           isContactOpen={isContactOpen}
-           setIsContactOpen={setIsContactOpen}
-         />
+          <About
+            isContactOpen={isContactOpen}
+            setIsContactOpen={setIsContactOpen}
+          />
+          <Projects />
+          <ExperiencesVertical />
+          <Skills datas={sharedDatas} />
+          <Footer
+            isContactOpen={isContactOpen}
+            setIsContactOpen={setIsContactOpen}
+          />
         </LangProvider>
       </ContactContext.Provider>
     </main>

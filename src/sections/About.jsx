@@ -3,7 +3,7 @@ import "../styles/main.scss";
 import myPhoto from "/images/my-photo.png";
 import FileOpenIcon from "@mui/icons-material/FileOpen";
 import EmailIcon from "@mui/icons-material/Email";
-import Contact from "./ContactForm";
+import Contact from "../components/ContactForm";
 import { LangContext } from "../utils/LangContext";
 import { useContext } from "react";
 
