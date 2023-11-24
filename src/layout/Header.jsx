@@ -4,8 +4,8 @@ import "../styles/main.scss";
 import MobileNav from "../components/MobileNav";
 import UkFlag from "/icons/united-kingdom-flag-icon.svg";
 import FrFlag from "/icons/france-flag-icon.svg";
-import WbSunnyIcon from "@mui/icons-material/WbSunny";
-import Brightness2Icon from "@mui/icons-material/Brightness2";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun , faMoon } from "@fortawesome/free-solid-svg-icons";
 import Contact from "../components/ContactForm";
 import { useContext } from "react";
 import { LangContext } from "../utils/LangContext";
@@ -42,7 +42,8 @@ function Header({ isContactOpen, setIsContactOpen }) {
             <img src={lang ? UkFlag : FrFlag} />
           </a>
           <a className="setThemeColor">
-            <WbSunnyIcon />
+          <FontAwesomeIcon icon={faSun} style={{color: "#f1e904",}} />
+          <FontAwesomeIcon icon={faMoon} style={{color: "#2b5aab",}} />
           </a>
         </div>
       </nav>

@@ -1,16 +1,16 @@
-@import './sections/about.scss';
-@import './sections/banner.scss';
-@import './components/card.scss';
-@import './components/contactForm.scss';
-@import './sections/experiencesVertical.scss';
-@import './components//modal.scss';
-@import './components/carousel.scss';
-@import './sections/projects.scss';
-@import './sections/skills.scss';
+@import "./sections/about.scss";
+@import "./sections/banner.scss";
+@import "./components/card.scss";
+@import "./components/contactForm.scss";
+@import "./sections/experiencesVertical.scss";
+@import "./components//modal.scss";
+@import "./components/carousel.scss";
+@import "./sections/projects.scss";
+@import "./sections/skills.scss";
 @import './layout/header.scss';
-@import './layout/footer.scss';
-@import './mixins.scss';
-@import './variables.scss';
+@import "./layout/footer.scss";
+@import "./mixins.scss";
+@import "./variables.scss";
 
 html {
   scroll-behavior: smooth;
@@ -18,7 +18,9 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-#root, html, body{
+#root,
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -26,16 +28,16 @@ html {
   background-color: $primary-background-color;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-// Composants réutilisables // 
+// Composants réutilisables //
 
-.btn{
+.btn {
   height: 50px;
   min-width: 200px;
   padding: 5px;
@@ -45,13 +47,20 @@ main{
 .section-title {
   margin-left: 2vw;
 }
-a{
-  &:hover{
+a {
+  &:hover {
     opacity: 0.7;
     transform: scale(1.05);
     transition: all 0.15s ease-in-out;
   }
-  &:active{
+  &:active {
     opacity: 1;
   }
+}
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  pointer-events: none; /* This will make the image not clickable */
 }
