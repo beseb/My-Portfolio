@@ -34,11 +34,9 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-
     gap: 1em;
     padding: 0.5em;
     list-style: none;
-    background-color: blue;
 
     @media screen and (max-width: 425px) {
       height: fit-content;
@@ -54,7 +52,7 @@
     li {
       width: fit-content;
       height: auto;
-     
+
       @media screen and (max-width: 768px) {
       }
     }

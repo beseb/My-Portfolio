@@ -1,11 +1,26 @@
 @keyframes moveUpDown {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(15px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
+@mixin apparition($duration: 0.3s) {
+  @keyframes apparition {
+    from {
+      opacity: 0;
+      transform: translateY($header-height/2);
+    }
+    to {
+      opacity: 1;
+      transform: translateY($header-height/1.4);
+    }
+  }
+
+  animation: apparition $duration ease-out forwards;
+}
+
