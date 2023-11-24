@@ -15,7 +15,7 @@ const {datas} = useContext(LangContext)
   return (
     <section className='experiences-section' id='experiences'>
       <h2 className='section-title'>
-        {datas.basic_info.section_name.experiences}
+        {datas.basic_info.section_name.experience}
       </h2>
       <VerticalTimeline style={{zIndex: -1}}>
         <VerticalTimelineElement

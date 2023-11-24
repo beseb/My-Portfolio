@@ -4,10 +4,13 @@
 .skills-section {
   background-color: $primary-background-color;
   margin-top: 10vh;
-  height: 30vh;
+  height: 22vh;
   width: 100%;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    height: 15vh;
+  }
 
   .carousel_container {
     height: 100%;

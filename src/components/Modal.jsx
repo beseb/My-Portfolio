@@ -18,6 +18,7 @@ function Modal({ isOpen, setIsOpen, project }) {
   return (
     <div className="modal" style={{ display: isOpen ? "flex" : "none" }}>
       <div className="modal_wrapper" onClick={(e) => e.stopPropagation()}>
+       <a href="" onClick={handleCloseClick}><CloseIcon/></a>
         {/* <ImageCarousel className='.image-carousel' data={project}/> */}
         <AwesomeSlider
           cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}

@@ -4,6 +4,7 @@ import "../styles/main.scss";
 
 function Card({ datas }) {
   const image = datas.images[0];
+  const id = datas.id;
   const [isHovered, setIsHovered] = useState(false);
 
   const onMouseEnter = () => {
@@ -44,7 +45,7 @@ function Card({ datas }) {
 
   return (
     <a
-      className={`card_container ${datas.id}`}
+      className={`card_container ${id}`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >

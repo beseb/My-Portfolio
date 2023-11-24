@@ -25,7 +25,8 @@ function Footer({ isContactOpen, setIsContactOpen }) {
           >
             <FontAwesomeIcon
               icon={faGithub}
-              style={{ height: "3em", color: "black" }}
+              className="footer-icons"
+              color="black"
             />
           </a>
           <a
@@ -35,13 +36,15 @@ function Footer({ isContactOpen, setIsContactOpen }) {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              style={{ height: "3em", color: "blue" }}
+              className="footer-icons"
+              color="blue"
             />
           </a>
           <a onClick={handleOpenContact}>
             <FontAwesomeIcon
               icon={faEnvelope}
-              style={{ height: "3em", color: "black", border: "none" }}
+              className="footer-icons"
+              color="grey"
             />
           </a>
         </div>
@@ -52,9 +55,9 @@ function Footer({ isContactOpen, setIsContactOpen }) {
             datas={datas}
           />
         )}
-        <span className="copyright">
+        <p className="copyright">
           © 2023 SEA Web-Studio. All rights reserved.
-        </span>
+        </p>
       </div>
     </footer>
   );

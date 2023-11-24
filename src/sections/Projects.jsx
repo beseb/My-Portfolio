@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 import "../styles/main.scss";
-import "../styles/main.scss";
 import Card from "../components/Card";
 import Modal from "../components/Modal";
-import { useState, useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import { LangContext } from "../utils/LangContext";
+
+
 function Projects() {
   const { datas } = useContext(LangContext);
   const [openProjectId, setOpenProjectId] = useState(null);

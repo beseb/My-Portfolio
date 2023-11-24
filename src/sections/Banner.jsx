@@ -18,11 +18,11 @@ function Banner() {
           steps={[
             ". . .",
             1000,
-        "Web Developper . . .",
+        " Web Developper . . .",
             2000,
             "Web Developper & Designer . . .",
             2500,
-            "Web Developper & Creator",
+            "Web Developper & Creator !",
             2800,
           ]}
           loop={Infinity}

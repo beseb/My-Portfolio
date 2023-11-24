@@ -1,42 +1,71 @@
-@import '../mixins.scss';
-@import '../variables.scss';
+@import "../mixins.scss";
+@import "../variables.scss";
 
 footer {
-  background-image: url('/images/wave3.svg');
-    background-size: cover;
-  
-    height: 15vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px;
-    font-family: $secondary-font-family;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-image: url("/images/wave3.svg");
+  background-size: cover;
+
+  height: $header-height;
+  min-height: fit-content;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // padding: 0.5em;
+  font-family: $secondary-font-family;
 
   .seaLogo {
-    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   & .--content {
-    width: 50%;
+    width: 60%;
     height: 100%;
-    margin-left: 17%;
+    // margin-left: 17%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    
- .links{
-    width: 100%;
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
-    margin-top: 5%;
-  
- }
-    
+    margin-top: 1em;
+    @media screen and (max-width:768px) {
+      justify-content: flex-end;
+      margin-left: 5%;
+    }
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1em;
+      // margin-top: 3%;
+      & .footer-icons {
+        height: 3em;
+        @media screen and (max-width: 1024px) {
+          height: 2.5em;
+        }
+        @media screen and (max-width: 900px) {
+          height: 2em;
+        }
+        @media screen and (max-width: 768px) {
+          height: 1.5em;
+
+        }
+      }
+    }
+
     .copyright {
+      display: inline-block;
+      width: auto;
+      @media screen and (max-width: 768px) {
+        // margin-bottom: 0.5em;
+      }
     }
   }
 }

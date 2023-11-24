@@ -31,8 +31,8 @@
       "startDate": "2023",
       "description": "Un projet type AirBnb, crée avec React, Typescript et Sass, pour trouver et réserver un hébergement pour des vacances de rêves ! ",
       "images": [
-        "images/portfolio/kasa/kasa-p1.png",
-        "images/portfolio/kasa/kasa-p2.png"
+        "src/assets/images/kasa/kasa-p1.png",
+        "src/assets/images/kasa/kasa-p2.png"
       ],
       "url": "https://kasa.seawebstudio.com",
       "linkCTA": "Voir le site",
@@ -56,8 +56,8 @@
       "startDate": "2023",
       "description": "Un site de notation de livres en ligne, avec espace personnel. J'ai crée une API pour faire communiquer le back-end en NodeJs et la base de donnée MongoDb avec l'interface du site !",
       "images": [
-        "images/portfolio/vieux-grimoire/p1.png",
-        "images/portfolio/vieux-grimoire/p2.png"
+        "/images/vieux-grimoire/p1.png",
+        "/images/vieux-grimoire/p2.png"
       ],
       "url": "https://vieux-grimoire.seawebstudio.com",
       "linkCTA": "Voir le site",
@@ -81,8 +81,8 @@
       "startDate": "2023",
       "description": "Un des premiers projets effectués en autonomie durant ma formation. J'ai amélioré le réferencement SEO, optimisé les performances du site et corrigé des bugs techniques !",
       "images": [
-        "images/portfolio/nina-carducci-portfolio/nina-p1.png",
-        "images/portfolio/nina-carducci-portfolio/nina-p2.png"
+        "images/nina-carducci-portfolio/nina-p1.png",
+        "images/nina-carducci-portfolio/nina-p2.png"
       ],
       "url": "https://nina-carducci.seawebstudio.com",
       "linkCTA": "Voir le site",
@@ -106,8 +106,8 @@
       "startDate": "2023",
       "description": "Une landing-page efficace et responsive pour un site de réservations d'hébergements en ligne !",
       "images": [
-        "images/portfolio/booki/p1.png",
-        "images/portfolio/booki/p2.png"
+        "images/booki/p1.png",
+        "images/booki/p2.png"
       ],
       "url": "https://booki.seawebstudio.com",
       "linkCTA": "Voir le site",
