@@ -3,10 +3,10 @@ import '../styles/main.scss';
 import '../styles/components/projects.scss';
 import Card from './Card';
 import Modal from './Modal';
-import { useState, useEffect } from 'react';
-
+import { useState, useEffect, useContext } from 'react';
+import { LangContext } from '../utils/LangContext';
 function Projects() {
-
+  const {datas} = useContext(LangContext)
   const [openProjectId, setOpenProjectId] = useState(null);
 
   const handleCardClick = (index) => {

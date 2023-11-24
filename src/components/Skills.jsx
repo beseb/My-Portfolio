@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import "../styles/main.scss";
 
 function Skills({ datas }) {
@@ -9,7 +8,7 @@ function Skills({ datas }) {
           {datas.skills.icons.map((icon, index) => {
             return (
               <div className="carousel-item" key={index}>
-                <i className={icon.class} ></i>
+                <i className={icon.class}></i>
                 <p className="name">{icon.name}</p>
               </div>
             );
@@ -17,7 +16,7 @@ function Skills({ datas }) {
           {datas.skills.icons.map((icon, i) => {
             return (
               <div className="carousel-item" key={i}>
-                <i className={icon.class} ></i>
+                <i className={icon.class}></i>
                 <p className="name">{icon.name}</p>
               </div>
             );

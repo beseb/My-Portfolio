@@ -4,9 +4,11 @@ import myPhoto from "/images/my-photo.png";
 import FileOpenIcon from "@mui/icons-material/FileOpen";
 import EmailIcon from "@mui/icons-material/Email";
 import Contact from "./ContactForm";
+import { LangContext } from "../utils/LangContext";
+import { useContext } from "react";
 
 function About({ isContactOpen, setIsContactOpen }) {
-
+  const { datas } = useContext(LangContext);
 
   const handleOpenContact = () => {
     setIsContactOpen(true);

@@ -7,9 +7,10 @@ import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import '../styles/main.scss';
-
+import { useContext } from 'react';
+import { LangContext } from '../utils/LangContext';
 function ExperiencesVertical() {
-
+const {datas} = useContext(LangContext)
 
   return (
     <section className='experiences-section' id='experiences'>

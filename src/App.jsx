@@ -32,18 +32,18 @@ function App() {
             setIsContactOpen={setIsContactOpen}
            
           />
-          {/* <Banner />
-        <About
-          isContactOpen={isContactOpen}
-          setIsContactOpen={setIsContactOpen}
+          <Banner />
+         <About
+         isContactOpen={isContactOpen}
+           setIsContactOpen={setIsContactOpen}
         />
-        <Projects />
-        <ExperiencesVertical />
-        <Skills datas={sharedDatas} />
-        <Footer
-          isContactOpen={isContactOpen}
-          setIsContactOpen={setIsContactOpen}
-        /> */}
+         <Projects />
+         <ExperiencesVertical />
+         <Skills datas={sharedDatas} />
+         <Footer
+           isContactOpen={isContactOpen}
+           setIsContactOpen={setIsContactOpen}
+         />
         </LangProvider>
       </ContactContext.Provider>
     </main>
