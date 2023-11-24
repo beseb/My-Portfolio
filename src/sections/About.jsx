@@ -30,7 +30,19 @@ function About({ isContactOpen, setIsContactOpen }) {
         </div>
       </div>
       <div className="about-section_content">
-        <h3>{datas.basic_info.description_header}</h3>
+        <div className="heading-content">
+          <h3>{datas.basic_info.description_header}</h3>
+          <div className="about-section_picture mobile-pic">
+          <div className="outerCircle mobile-pic">
+            <div className="innerCircle mobile-pic">
+              <img
+                src={myPhoto}
+                alt="Photo of S.Escudero from SEA Web-Studio"
+              ></img>
+            </div>
+          </div>
+                </div>
+        </div>
         <h4>{datas.basic_info.description_1}</h4>
         <h4>{datas.basic_info.description_2}</h4>
         <h4>{datas.basic_info.description_3}</h4>
