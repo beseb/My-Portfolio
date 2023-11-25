@@ -172,14 +172,27 @@ p {
     gap: 0;
   }
 }
-.about-section_content .--contact-wrapper a {
+.about-section_content .--contact-wrapper a,
+.about-section_content .--contact-wrapper button {
   text-decoration: none;
   text-align: center;
   color: blue;
 }
-.about-section_content .--contact-wrapper a .--icons {
+.about-section_content .--contact-wrapper a .--icons,
+.about-section_content .--contact-wrapper button .--icons {
   font-size: 3em;
   margin-bottom: -0.3em;
+}
+.about-section_content .--contact-wrapper button {
+  font-size: 1em;
+}
+.about-section_content .--contact-wrapper button:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+  transition: all 0.15s ease-in-out;
+}
+.about-section_content .--contact-wrapper button:active {
+  opacity: 1;
 }
 
 h1,
@@ -388,7 +401,7 @@ p {
   justify-content: flex-end;
 }
 .contactForm img {
-  height: 10em;
+  height: 5em;
   width: auto;
 }
 .contactForm_overlay {
@@ -442,7 +455,8 @@ p {
   height: fit-content;
 }
 .contactForm_wrapper .contactForm_header .infos .imgMap {
-  height: 20vh;
+  height: 15em;
+  width: auto;
   margin-left: 2em;
 }
 .contactForm_wrapper form {
@@ -534,6 +548,7 @@ p {
 .experiences-section {
   background-image: url("/images/wave4.svg");
   background-size: cover;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .experiences-section {
@@ -612,6 +627,17 @@ p {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+.modal button {
+  background-color: transparent;
+}
+.modal button:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+  transition: all 0.15s ease-in-out;
+}
+.modal button:active {
+  opacity: 1;
 }
 .modal_overlay {
   position: fixed;
@@ -1146,12 +1172,10 @@ header .desktopNav .nav_buttons {
   align-items: center;
   min-width: fit-content;
   margin-left: 1.5em;
+  gap: 1em;
 }
-header .desktopNav .nav_buttons a {
-  margin-right: 1em;
-}
-header .desktopNav .nav_buttons a img {
-  height: 1em;
+header .desktopNav .nav_buttons img {
+  height: 1.5em;
   width: auto;
 }
 
@@ -1388,6 +1412,14 @@ footer .--content .links .footer-icons {
   footer .--content .links .footer-icons {
     height: 1.5em;
   }
+}
+footer .--content .links .footer-icons:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+  transition: all 0.15s ease-in-out;
+}
+footer .--content .links .footer-icons:active {
+  opacity: 1;
 }
 footer .--content .copyright {
   display: inline-block;

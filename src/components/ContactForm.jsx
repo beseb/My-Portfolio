@@ -35,7 +35,7 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
           onClick={handleCloseClick}
         />
         <div className="contactForm_header">
-          <img src={SeaLogo} className="SEALogo" />
+          <img src={SeaLogo} className="SEALogo" alt="Logo of SEA Webstudiod"/>
           <div className="content">
             <LocalPhoneIcon />
             <h3 className="section-title">Tél. :</h3>

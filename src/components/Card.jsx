@@ -5,6 +5,7 @@ import "../styles/main.scss";
 function Card({ datas }) {
   const image = datas.images[0];
   const id = datas.id;
+  const alt = datas.alt;
   const [isHovered, setIsHovered] = useState(false);
 
   const onMouseEnter = () => {
@@ -51,7 +52,7 @@ function Card({ datas }) {
     >
       <div className="inner_card_container">
         <div className="--images_container" style={imageContainerStyle}>
-          <img src={image} style={imageStyle} />
+          <img src={image} style={imageStyle} alt={alt} />
         </div>
         <div className="_overlay" style={overlayStyle}>
           <h3 className="--title" style={titleStyle}>

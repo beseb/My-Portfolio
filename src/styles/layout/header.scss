@@ -46,7 +46,6 @@ header {
       text-decoration: none;
       word-break: keep-all;
       word-wrap: none;
-
       a:hover {
         text-decoration: none;
       }
@@ -79,18 +78,14 @@ header {
 
     .nav_buttons {
       display: flex;
-      // flex-direction: row;
       justify-content: flex-start;
       align-items: center;
       min-width: fit-content;
       margin-left: 1.5em;
-
-      a {
-        margin-right: 1em;
-        img {
-          height: 1em;
-          width: auto;
-        }
+      gap: 1em;
+      img {
+        height: 1em;
+        width: auto;
       }
     }
   }

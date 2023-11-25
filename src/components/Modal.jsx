@@ -18,7 +18,7 @@ function Modal({ isOpen, setIsOpen, project }) {
   return (
     <div className="modal" style={{ display: isOpen ? "flex" : "none" }}>
       <div className="modal_wrapper" onClick={(e) => e.stopPropagation()}>
-       <a href="" onClick={handleCloseClick}><CloseIcon/></a>
+       <button className="btnClose" onClick={handleCloseClick} style={{border : 'none'}} aria-label="button close modal"><CloseIcon className="mui-close-icon"/></button>
         {/* <ImageCarousel className='.image-carousel' data={project}/> */}
         <AwesomeSlider
           cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
@@ -28,7 +28,7 @@ function Modal({ isOpen, setIsOpen, project }) {
         >
           {project.images.map((image, index) => {
             return (
-              <div className="slider-item" data-src={image} key={index}></div>
+              <div className="slider-item" data-src={image} key={index} aria-description="image of the project" ></div>
             );
           })}
         </AwesomeSlider>
@@ -53,6 +53,7 @@ function Modal({ isOpen, setIsOpen, project }) {
             target="_blank"
             rel="noopener noreferrer"
             className="modal_wrapper_content--linkCTA"
+            aria-label="Link to the website"
           >
             {project.linkCTA}
           </a>

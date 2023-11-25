@@ -4,9 +4,9 @@
     "title": [
       "Designer Web & Developpeur Full-Stack ⚡⚡"
     ],
-    "catch_phrases1":"Web Developer . .",
-    "catch_phrases2":"Web Designer . .",
-    "catch_phrases3":"Web Creator",
+    "catch_phrases1": "Web Developer . .",
+    "catch_phrases2": "Web Designer . .",
+    "catch_phrases3": "Web Creator",
     "cta": "En savoir plus",
     "cta_website": "Voir le site",
     "description_header": "Salut ! 👋",
@@ -20,8 +20,8 @@
       "skills": "Skills",
       "experience": "Experiences"
     },
-    "language_flag" : "/icons/france-flag-icon.svg",
-    "mail" : "Votre adresse e-mail",
+    "language_flag": "/icons/france-flag-icon.svg",
+    "mail": "Votre adresse e-mail",
     "message": "Votre message",
     "contactName": "Votre nom"
   },
@@ -34,6 +34,7 @@
         "src/assets/images/kasa/kasa-p1.png",
         "src/assets/images/kasa/kasa-p2.png"
       ],
+      "alt": "kasa image",
       "url": "https://kasa.seawebstudio.com",
       "linkCTA": "Voir le site",
       "technologies": [
@@ -59,6 +60,7 @@
         "/images/vieux-grimoire/p1.png",
         "/images/vieux-grimoire/p2.png"
       ],
+      "alt": "Vieux-Grimoire image",
       "url": "https://vieux-grimoire.seawebstudio.com",
       "linkCTA": "Voir le site",
       "technologies": [
@@ -84,6 +86,7 @@
         "images/nina-carducci-portfolio/nina-p1.png",
         "images/nina-carducci-portfolio/nina-p2.png"
       ],
+      "alt": "Nina Carducci project image",
       "url": "https://nina-carducci.seawebstudio.com",
       "linkCTA": "Voir le site",
       "technologies": [
@@ -109,6 +112,7 @@
         "images/booki/p1.png",
         "images/booki/p2.png"
       ],
+      "alt": "Booki project image",
       "url": "https://booki.seawebstudio.com",
       "linkCTA": "Voir le site",
       "technologies": [

@@ -10,6 +10,19 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+  button {
+    background-color: transparent;
+    &:hover {
+      opacity: 0.7;
+      transform: scale(1.2);
+      transition: all 0.15s ease-in-out;
+    }
+    &:active {
+      opacity: 1;
+      transform: scale(1.4);
+      transition: transform 0.15s ease;
+    }
+  }
   &_overlay {
     position: fixed;
     top: 0;
@@ -29,32 +42,36 @@
     align-items: center;
     justify-content: space-between;
     @media screen and (max-width: 1024px) {
-      height: 80%;
+      height: fit-content;
       width: 80%;
+    }
+    .btnClose {
+      position: relative;
+      top: 2%;
+      left: 44%;
+      z-index: 10;
+      .mui-close-icon{
+        font-size: 2.5em;
+      }
     }
     .awesome-slider {
       position: relative;
-      top: 0;
+      top: -2.5em;
       left: 0;
       color: black;
       border-top-right-radius: $border-radius;
       border-top-left-radius: $border-radius;
       overflow: hidden;
-      margin-bottom: -2%;
-      height: 70%;
+      height: auto;
+      aspect-ratio: 1/1;
       @media screen and (max-width: 768px) {
       }
       img {
         border-top-right-radius: $border-radius;
         border-top-left-radius: $border-radius;
-        object-fit: cover;
-        object-position: center;
+        // object-fit: cover;
       }
-      .btnClose {
-        position: relative;
-        top: 0;
-        right: 0;
-      }
+    
     }
     &_content {
       display: flex;

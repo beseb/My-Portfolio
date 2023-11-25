@@ -22,6 +22,7 @@ function Footer({ isContactOpen, setIsContactOpen }) {
             href="http://github.com/beseb"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Go to my Github"
           >
             <FontAwesomeIcon
               icon={faGithub}
@@ -33,6 +34,7 @@ function Footer({ isContactOpen, setIsContactOpen }) {
             href="https://www.linkedin.com/in/sebastien-escudero/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Go to my LinkedIn"
           >
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -40,13 +42,21 @@ function Footer({ isContactOpen, setIsContactOpen }) {
               color="blue"
             />
           </a>
-          <a onClick={handleOpenContact}>
+          <button
+            onClick={handleOpenContact}
+            style={{
+              border: "none",
+              height: "100%",
+              background: "transparent",
+            }}
+            aria-label="Open contact form"
+          >
             <FontAwesomeIcon
               icon={faEnvelope}
               className="footer-icons"
               color="grey"
             />
-          </a>
+          </button>
         </div>
         {isContactOpen && (
           <Contact

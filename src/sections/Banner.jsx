@@ -11,7 +11,7 @@ function Banner() {
 
   return (
     <div className="banner-section ">
-      <img src={seaLogo} alt="Logo SEA Web-Studio" className="unselectable" />
+      <img src={seaLogo} alt="Logo de SEA Web-Studio" className="unselectable" />
       <div className="content">
         <Typical
           // CHANGEZ LES WEB DEVELOPPER EN FR ET EN ANGLAIS //

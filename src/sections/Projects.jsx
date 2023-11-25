@@ -32,7 +32,7 @@ function Projects() {
   });
 
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <h2 className="section-title">
         {datas.basic_info.section_name.projects}
       </h2>

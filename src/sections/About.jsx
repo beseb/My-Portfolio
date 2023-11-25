@@ -47,14 +47,14 @@ function About({ isContactOpen, setIsContactOpen }) {
         <h4>{datas.basic_info.description_2}</h4>
         <h4>{datas.basic_info.description_3}</h4>
         <div className="--contact-wrapper">
-          <a onClick={handleOpenContact} style={{ cursor: "pointer" }}>
-            <EmailIcon className="--icons" onClick={handleOpenContact} />
+          <button onClick={handleOpenContact} style={{ cursor: "pointer", background:"transparent", border:'none' }} aria-label="Open contact form">
+            <EmailIcon className="--icons" onClick={handleOpenContact} style={{height:"100%"}} color="blue"/>
             <h4>
               <strong style={{ color: "black" }}>
                 {datas.basic_info.description_4}
               </strong>
             </h4>
-          </a>
+          </button>
           {isContactOpen && (
             <Contact
               isContactOpen={isContactOpen}
