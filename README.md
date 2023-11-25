@@ -3,7 +3,7 @@
 
   &#xa0;
 
-  <a href="https://portfolio.seawebstudio.com">Demo</a>
+  <a href="https://portfolio.seawebstudio.com">See Demo</a>
 </div>
 
 <h1 align="center">My Portfolio</h1>
