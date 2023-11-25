@@ -3,20 +3,13 @@
 
 .contactForm {
   background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  fieldset {
-    border: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
+  width: 100%;
+  height: 100%;
 
   &_overlay {
     position: fixed;
@@ -29,30 +22,38 @@
     border-radius: $border-radius;
     z-index: 2;
     margin: auto;
-    height: 70vh;
-    width: 70vw;
-    padding: 1em;
+    height: fit-content;
+    max-height: 90;
+    width: 70%;
+    padding: 1%;
     background-color: $primary-background-color;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    @media screen and (max-width: 768px) {
+      height: fit-content;
+    }
     .btnClose {
-      position: relative;
-      top: 3%;
-      right: -45%;
+      // position: relative;
+      // top: 3%;
+      // right: -45%;
       font-size: 2em;
       margin: 0;
       padding: 0;
     }
 
     .contactForm_header {
+      position: relative;
+      top: -7%;
+      left: 0;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: 2fr 1fr;
       align-items: center;
       width: 100%;
-      height: 400px;
+      // max-height: 20%;
+      height: 300px;
       margin: 0;
       padding: 0;
       @media screen and (max-width: 768px) {
@@ -61,30 +62,34 @@
         align-items: center;
         justify-content: flex-start;
       }
-      & .SEALogo {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        height: 7em;
-        width: auto;
-        margin: 0;
-        padding: 0;
+      & .logo-wrapper {
+        height: fit-content;
+        display: flex;
+        place-items: center;
+        & .SEALogo {
+          grid-column: 1/2;
+          grid-row: 1/2;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
       }
       & .map-section {
         grid-column: 2/3;
         grid-row: 1/2;
-        // height: 50%;
         margin: 0;
         padding: 0;
         order: 3;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        place-items: start start;
 
-        & #leaflet-map{
-          @media screen and (max-width:768px) {
+        & #leaflet-map {
+          height: 100px;
+          @media screen and (max-width: 768px) {
             display: none;
           }
-        }
-        img {
-          height: 80%;
-          width: 80%;
         }
       }
 
@@ -95,17 +100,20 @@
         gap: 0.5em;
         margin: 0;
         padding: 0;
-        font-size: 1.8vw;
-        @media screen and (max-width:768px) {
-         order: 2; 
+        font-size: 0.8em;
+        height: 50%;
+        width: auto;
+        @media screen and (max-width: 768px) {
+          order: 2;
+          font-size: 0.8em;
         }
         .section-title {
           margin-left: 0;
           display: flex;
           flex-wrap: nowrap;
-          font-size: 2.5vw;
-          &.mail{
-            width: 6vw;
+          &.mail,
+          .tel {
+            width: 7vw;
           }
         }
       }
@@ -115,30 +123,52 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      height: 70%;
-      width: 100%;
+      height: fit-content;
+      width: 80%;
+      margin: 0;
+
+      padding: 0;
       font-family: $secondary-font-family;
-      input {
-        min-height: 4vh;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 15%;
       }
       #submit {
-        width: 6vw;
+        width: fit-content;
         font-size: 1.5em;
         border-radius: $border-radius;
         color: $primary-background-color;
         background-color: $button-background-color;
       }
-
-      .form-content {
-        margin-left: 3em;
-        margin-right: 3em;
-        width: 80%;
+      fieldset {
+        margin: 0;
+        padding: 0;
+        border: none;
+        width: 100%;
         display: flex;
         flex-direction: column;
-      }
-      #message {
-        height: 20vh;
-        width: 100%;
+        justify-content: flex-start;
+        align-content: flex-start;
+        input,
+        textarea {
+          border-radius: $border-radius - 5px;
+          margin-top: 0.5em;
+          margin-bottom: 1em;
+          width: 100%;
+        }
+
+        .form-content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content:flex-start ;
+          width: 100%;
+          margin: 0;
+        }
+        #message {
+          height: 20vh;
+          width: 100%;
+        }
       }
     }
   }

@@ -36,10 +36,10 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
           onClick={handleCloseClick}
         />
         <div className="contactForm_header">
-          <img src={SeaLogo} className="SEALogo" alt="Logo of SEA Webstudio" />
+          <div className="logo-wrapper"><img src={SeaLogo} className="SEALogo" alt="Logo of SEA Webstudio" /></div>
           <div className="infos-wrapper">
             <LocalPhoneIcon />
-            <h3 className="section-title">Tél. :</h3>
+            <h3 className="section-title tel">Tél. :</h3>
             <h4>+33 6 12 34 56 78</h4>
           </div>
           <div className="infos-wrapper">
@@ -58,7 +58,7 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
             </div>
           </div>
         </div>
-        {/* <form
+        <form
           action="https://formspree.io/p/2346908508634480159/f/contactForm"
           method="POST"
           onSubmit={handleSubmit}
@@ -110,7 +110,7 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
           <button type="submit" disabled={state.submitting} id="submit">
             Submit
           </button>
-        </form> */}
+        </form>
       </div>
       <div className="modal_overlay" onClick={handleCloseClick}></div>
     </div>
