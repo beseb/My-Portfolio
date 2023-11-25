@@ -1,12 +1,12 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="My Vite Portfolio" />
+  <img src="./.github/app.gif" alt="My Portfolio" />
 
   &#xa0;
 
   <a href="https://portfolio.seawebstudio.com">Demo</a>
 </div>
 
-<h1 align="center">My Vite Portfolio</h1>
+<h1 align="center">My Portfolio</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/my-vite-portfolio?color=56BEB8">
@@ -27,7 +27,7 @@
 Status
 
 <h4 align="center"> 
-	⚡ My Vite Portfolio 🚀 Online !  
+	⚡ My Portfolio 🚀 Online !  
 </h4> 
 
 <hr>
@@ -36,7 +36,6 @@ Status
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
@@ -50,9 +49,9 @@ Welcome to my first portfolio, inspired by <a href="https://github.com/Dorota199
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Show my work;\
-:heavy_check_mark: Set language to English/French;\
-:heavy_check_mark: Dark mode !;
+:heavy_check_mark: Show my work !
+:heavy_check_mark: Set language to English/French !
+:heavy_check_mark: Dark mode !
 
 ## :rocket: Technologies ##
 
@@ -61,12 +60,9 @@ The following tools were used in this project:
 - [react-vertical-timeline](https://github.com/stephane-monnot/react-vertical-timeline)
 - [react-typical](https://github.com/catalinmiron/react-typical)
 - [Iconify](https://icon-sets.iconify.design/?query=react)
-- [React](https://pt-br.reactjs.org/)
+- [Vite + React](https://vitejs.dev/)
 - [Sass](https://sass.com)
 
-## :white_check_mark: Requirements ##
-
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
 ## :checkered_flag: Starting ##
 
