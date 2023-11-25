@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useForm, ValidationError, FormspreeProvider } from "@formspree/react";
 import "../styles/main.scss";
 import CloseIcon from "@mui/icons-material/Close";
@@ -23,6 +23,7 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
     console.log("btn clicked");
     return alert("Thank you for your message !");
   }
+
   return (
     <div
       className="contactForm"
@@ -35,25 +36,29 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
           onClick={handleCloseClick}
         />
         <div className="contactForm_header">
-          <img src={SeaLogo} className="SEALogo" alt="Logo of SEA Webstudiod"/>
-          <div className="content">
+          <img src={SeaLogo} className="SEALogo" alt="Logo of SEA Webstudio" />
+          <div className="infos-wrapper">
             <LocalPhoneIcon />
             <h3 className="section-title">Tél. :</h3>
             <h4>+33 6 12 34 56 78</h4>
           </div>
-          <div className="content">
+          <div className="infos-wrapper">
             <SendIcon />
-            <h3 className="section-title">Mail</h3>
+            <h3 className="section-title mail">Mail :</h3>
+
             <h4>sebastien.escudero@gmail.com</h4>
           </div>
-          <div className="infos">
-            <div className="content">
+          <div className="map-section">
+            <div id="leaflet-map">
+              <img src={imgMap} alt="localisation of SEA WebStudio"></img>
+            </div>
+            <div className="infos-wrapper">
               <PlaceIcon />
-              <img src={imgMap} className="imgMap" />
+              <h4>1 avenue de la République, 77120 Coulommiers</h4>
             </div>
           </div>
         </div>
-        <form
+        {/* <form
           action="https://formspree.io/p/2346908508634480159/f/contactForm"
           method="POST"
           onSubmit={handleSubmit}
@@ -105,7 +110,7 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
           <button type="submit" disabled={state.submitting} id="submit">
             Submit
           </button>
-        </form>
+        </form> */}
       </div>
       <div className="modal_overlay" onClick={handleCloseClick}></div>
     </div>

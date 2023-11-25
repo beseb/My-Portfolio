@@ -17,10 +17,7 @@
     flex-direction: column;
     justify-content: flex-end;
   }
-  img {
-    height: 5em;
-    width: auto;
-  }
+
   &_overlay {
     position: fixed;
     top: 0;
@@ -32,49 +29,84 @@
     border-radius: $border-radius;
     z-index: 2;
     margin: auto;
-    height: 80%;
-    width: 50%;
+    height: 70vh;
+    width: 70vw;
+    padding: 1em;
     background-color: $primary-background-color;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     .btnClose {
       position: relative;
       top: 3%;
       right: -45%;
       font-size: 2em;
+      margin: 0;
+      padding: 0;
     }
 
     .contactForm_header {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 20vh;
+      grid-template-rows: repeat(2, 1fr);
       align-items: center;
-
-      .SEALogo {
+      width: 100%;
+      height: 400px;
+      margin: 0;
+      padding: 0;
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      & .SEALogo {
         grid-column: 1/2;
         grid-row: 1/2;
-        font-size: 1.8em;
+        height: 7em;
+        width: auto;
         margin: 0;
         padding: 0;
       }
-      .content {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        height: fit-content;
-        gap: 0.5em;
-      }
-      & .infos {
+      & .map-section {
         grid-column: 2/3;
         grid-row: 1/2;
-        height: fit-content;
+        // height: 50%;
+        margin: 0;
+        padding: 0;
+        order: 3;
 
-        & .imgMap {
-          height: 15em;
-          width: auto;
-          margin-left: 2em;
+        & #leaflet-map{
+          @media screen and (max-width:768px) {
+            display: none;
+          }
+        }
+        img {
+          height: 80%;
+          width: 80%;
+        }
+      }
+
+      & .infos-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5em;
+        margin: 0;
+        padding: 0;
+        font-size: 1.8vw;
+        @media screen and (max-width:768px) {
+         order: 2; 
+        }
+        .section-title {
+          margin-left: 0;
+          display: flex;
+          flex-wrap: nowrap;
+          font-size: 2.5vw;
+          &.mail{
+            width: 6vw;
+          }
         }
       }
     }
