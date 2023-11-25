@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Typical from "react-typical";
 import "../styles/main.scss";
-import seaLogo from "/images/SEA-logo.png";
+import seaLogo from "/images/SEA-logo.webp";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LangContext } from "../utils/LangContext";
 import { useContext } from "react";

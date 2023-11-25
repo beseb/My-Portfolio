@@ -5,11 +5,11 @@ import CloseIcon from "@mui/icons-material/Close";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
-import SeaLogo from "/images/SEA-logo.svg";
+import SeaLogo from "/images/SEA-logo.webp";
 import PlaceIcon from "@mui/icons-material/Place";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import SendIcon from "@mui/icons-material/Send";
-import imgMap from "/images/map.jpg";
+import imgMap from "/images/map.webp";
 
 function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
   // Fonction pour arrêter la propagation et fermer la modal

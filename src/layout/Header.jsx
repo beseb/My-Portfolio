@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */ import seaLogo from "/images/SEA-logo.svg";
+/* eslint-disable react/prop-types */ import seaLogo from "/images/SEA-logo.webp";
 import "../styles/main.scss";
 import MobileNav from "../components/MobileNav";
 import UkFlag from "/icons/united-kingdom-flag-icon.svg";

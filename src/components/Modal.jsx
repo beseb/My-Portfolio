@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import ImageCarousel from "./Carousel";
 import "../styles/main.scss";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -16,9 +15,28 @@ function Modal({ isOpen, setIsOpen, project }) {
   };
 
   return (
-    <div className="modal" style={{ display: isOpen ? "flex" : "none" }} role="dialog" aria-modal={isOpen} aria-labelledby="modalTitle" aria-describedby="modalDescription" aria-hidden={!isOpen}>
-      <div className="modal_wrapper" onClick={(e) => e.stopPropagation()} role="document">
-       <button className="btnClose" onClick={handleCloseClick} style={{border : 'none'}} aria-label="Fermer la fenêtre modale"><CloseIcon className="mui-close-icon"/></button>
+    <div
+      className="modal"
+      style={{ display: isOpen ? "flex" : "none" }}
+      role="dialog"
+      aria-modal={isOpen}
+      aria-labelledby="modalTitle"
+      aria-describedby="modalDescription"
+      aria-hidden={!isOpen}
+    >
+      <div
+        className="modal_wrapper"
+        onClick={(e) => e.stopPropagation()}
+        role="document"
+      >
+        <button
+          className="btnClose"
+          onClick={handleCloseClick}
+          style={{ border: "none" }}
+          aria-label="Fermer la fenêtre modale"
+        >
+          <CloseIcon className="mui-close-icon" />
+        </button>
         {/* <ImageCarousel className='.image-carousel' data={project}/> */}
         <AwesomeSlider
           cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
@@ -28,14 +46,24 @@ function Modal({ isOpen, setIsOpen, project }) {
         >
           {project.images.map((image, index) => {
             return (
-              <div className="slider-item" data-src={image} key={index} aria-label={`Image ${index + 1} du projet`} ></div>
+              <div
+                className="slider-item"
+                data-src={image}
+                key={index}
+                aria-label={`Image ${index + 1} du projet`}
+              ></div>
             );
           })}
         </AwesomeSlider>
         <div className="modal_wrapper_content">
-          <h3 className="modal_wrapper--title" id="modalTitle">{project.title}</h3>
+          <h3 className="modal_wrapper--title" id="modalTitle">
+            {project.title}
+          </h3>
 
-          <p className="modal_wrapper_content--description" id="modalDescription">
+          <p
+            className="modal_wrapper_content--description"
+            id="modalDescription"
+          >
             {project.description}
           </p>
           <ul className="modal_wrapper_content--techs">

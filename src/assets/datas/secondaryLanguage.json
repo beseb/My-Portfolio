@@ -31,8 +31,8 @@
       "startDate": "2023",
       "description": "Un projet type AirBnb, crée avec React, Typescript et Sass, pour trouver et réserver un hébergement pour des vacances de rêves ! ",
       "images": [
-        "src/assets/images/kasa/kasa-p1.png",
-        "src/assets/images/kasa/kasa-p2.png"
+        "/images/kasa/kasa-p1.webp",
+        "/images/kasa/kasa-p2.webp"
       ],
       "alt": "kasa image",
       "url": "https://kasa.seawebstudio.com",
@@ -57,8 +57,8 @@
       "startDate": "2023",
       "description": "Un site de notation de livres en ligne, avec espace personnel. J'ai crée une API pour faire communiquer le back-end en NodeJs et la base de donnée MongoDb avec l'interface du site !",
       "images": [
-        "/images/vieux-grimoire/p1.png",
-        "/images/vieux-grimoire/p2.png"
+        "/images/vieux-grimoire/p1.webp",
+        "/images/vieux-grimoire/p2.webp"
       ],
       "alt": "Vieux-Grimoire image",
       "url": "https://vieux-grimoire.seawebstudio.com",
@@ -83,8 +83,8 @@
       "startDate": "2023",
       "description": "Un des premiers projets effectués en autonomie durant ma formation. J'ai amélioré le réferencement SEO, optimisé les performances du site et corrigé des bugs techniques !",
       "images": [
-        "images/nina-carducci-portfolio/nina-p1.png",
-        "images/nina-carducci-portfolio/nina-p2.png"
+        "images/nina-carducci-portfolio/nina-p1.webp",
+        "images/nina-carducci-portfolio/nina-p2.webp"
       ],
       "alt": "Nina Carducci project image",
       "url": "https://nina-carducci.seawebstudio.com",
@@ -109,8 +109,8 @@
       "startDate": "2023",
       "description": "Une landing-page efficace et responsive pour un site de réservations d'hébergements en ligne !",
       "images": [
-        "images/booki/p1.png",
-        "images/booki/p2.png"
+        "images/booki/p1.webp",
+        "images/booki/p2.webp"
       ],
       "alt": "Booki project image",
       "url": "https://booki.seawebstudio.com",

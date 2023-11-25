@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "../styles/main.scss";
-import myPhoto from "/images/my-photo.png";
+import myPhoto from "/images/my-photo.webp";
 import FileOpenIcon from "@mui/icons-material/FileOpen";
 import EmailIcon from "@mui/icons-material/Email";
 import Contact from "../components/ContactForm";
