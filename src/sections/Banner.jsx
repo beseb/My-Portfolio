@@ -11,13 +11,20 @@ function Banner() {
 
   return (
     <div className="banner-section " role="banner">
-      <img src={seaLogo} alt="Logo de SEA Web-Studio" className="unselectable" role="img" aria-label="Logo de SEA Web-Studio" />
+      <img
+        src={seaLogo}
+        alt="Logo de SEA Web-Studio"
+        className="unselectable"
+        role="img"
+        aria-label="Logo de SEA Web-Studio"
+      />
       <div className="content">
+        <h1 style={{ visibility: "hidden", height:'0px', width:'0px'}}>SEA Web-Studio</h1>
         <Typical
           steps={[
             ". . .",
             1000,
-        " Web Developper . . .",
+            " Web Developper . . .",
             2000,
             "Web Developper & Designer . . .",
             2500,
@@ -25,7 +32,7 @@ function Banner() {
             2800,
           ]}
           loop={Infinity}
-          wrapper="h1"
+          wrapper="h2"
           className="typical"
           aria-label="Texte animé : développeur web, designer et créateur"
         />
