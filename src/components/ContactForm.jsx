@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
 import { useForm, ValidationError, FormspreeProvider } from "@formspree/react";
 import "../styles/main.scss";
 import CloseIcon from "@mui/icons-material/Close";
@@ -23,7 +22,6 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
     console.log("btn clicked");
     return alert("Thank you for your message !");
   }
-
   return (
     <div
       className="contactForm"
@@ -118,7 +116,7 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
             </div>
           </fieldset>
           <button type="submit" disabled={state.submitting} id="submit">
-            Submit
+            Envoyer
           </button>
         </form>
       </div>

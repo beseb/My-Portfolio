@@ -2,7 +2,7 @@
 @import "../mixins.scss";
 
 .contactForm {
-  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.3); /* Black w/ opacity */
   display: none;
   position: fixed;
   z-index: 1;
@@ -24,7 +24,7 @@
     margin: auto;
     height: fit-content;
     max-height: 90%;
-    width: 70%;
+    width: 60%;
     padding: 1%;
     background-color: $primary-background-color;
     display: flex;
@@ -40,6 +40,15 @@
       font-size: 2em;
       margin: 0;
       padding: 0;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+        transform: scale(1.05);
+        transition: all 0.15s ease-in-out;
+      }
+      &:active {
+        opacity: 1;
+      }
     }
 
     .contactForm_header {
@@ -127,7 +136,7 @@
             display: none;
           }
           &.tel {
-            width: 6vw;
+            width: 3vw;
             @media screen and (max-width: 1024px) {
               width: 4.5vw;
             }
@@ -143,9 +152,10 @@
       height: fit-content;
       width: 90%;
       margin: 0;
-
       padding: 0;
       font-family: $secondary-font-family;
+      background-color: gainsboro;
+      border-radius: $border-radius - 5px;
 
       @media screen and (max-width: 768px) {
         // margin-top: 15%;
@@ -156,12 +166,22 @@
         border-radius: $border-radius;
         color: $primary-background-color;
         background-color: $button-background-color;
+        margin-bottom: 5px;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+          transform: scale(1.05);
+          transition: all 0.15s ease-in-out;
+        }
+        &:active {
+          opacity: 1;
+        }
       }
       fieldset {
         margin: 0;
         padding: 0;
         border: none;
-        width: 100%;
+        width: 99%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -171,7 +191,8 @@
           border-radius: $border-radius - 5px;
           margin-top: 0.5em;
           margin-bottom: 1em;
-          width: 100%;
+          width: 99%;
+          border: 1px solid black;
         }
 
         .form-content {
@@ -179,12 +200,13 @@
           flex-direction: column;
           align-items: flex-start;
           justify-content: flex-start;
-          width: 100%;
+          width: 98%;
           margin: 0;
+          margin: auto;
         }
         #message {
           height: 20vh;
-          width: 100%;
+          width: 99%;
         }
       }
     }
