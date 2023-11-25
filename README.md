@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="My Portfolio" />
+  <img src="./ezgif.com-optimize.gif" alt="My Portfolio" />
 
 &#xa0;
 
@@ -28,7 +28,7 @@
 Status
 
 <h4 align="center"> 
-	⚡ My Portfolio 🚀 Online !  
+	<a href="https://portfolio.seawebstudio.com">⚡ My Portfolio is Online ! 🚀  </a>
 </h4>
 
 <hr>
