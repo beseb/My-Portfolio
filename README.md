@@ -72,7 +72,7 @@ The following tools were used in this project:
 $ git clone https://github.com/beseb/my-portfolio
 
 # Access
-$ cd my-vite-portfolio
+$ cd my-portfolio
 
 # Install dependencies with npm or yarn
 $ yarn
