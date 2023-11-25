@@ -36,7 +36,7 @@ Status
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#work-features">TODO</a> &#xa0; | &#xa0;
+  <a href="#construction-features">TODO</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
@@ -56,7 +56,7 @@ Welcome to my first portfolio, inspired by <a href="https://github.com/Dorota199
 :heavy_check_mark: Projects and Contact Form in modal !
 :heavy_check_mark: Skills carousel !
 
-## :work: TODO
+## :construction: TODO
 
 :heavy_check_mark: implement Dark mode !
 
