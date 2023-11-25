@@ -20,8 +20,8 @@ function Modal({ isOpen, setIsOpen, project }) {
       style={{ display: isOpen ? "flex" : "none" }}
       role="dialog"
       aria-modal={isOpen}
-      aria-labelledby="modalTitle"
-      aria-describedby="modalDescription"
+      aria-labelledby={`modalTitle ${project}`}
+      aria-describedby={project.description}
       aria-hidden={!isOpen}
     >
       <div
@@ -56,13 +56,13 @@ function Modal({ isOpen, setIsOpen, project }) {
           })}
         </AwesomeSlider>
         <div className="modal_wrapper_content">
-          <h3 className="modal_wrapper--title" id="modalTitle">
+          <h3 className="modal_wrapper--title" id={project.title}>
             {project.title}
           </h3>
 
           <p
             className="modal_wrapper_content--description"
-            id="modalDescription"
+            id={`description : ${project.description}`}
           >
             {project.description}
           </p>
@@ -81,7 +81,7 @@ function Modal({ isOpen, setIsOpen, project }) {
             target="_blank"
             rel="noopener noreferrer"
             className="modal_wrapper_content--linkCTA"
-            aria-label="Lien vers le site web"
+            aria-label={`Lien vers le site web du ${project.title}`}
           >
             {project.linkCTA}
           </a>
