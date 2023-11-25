@@ -5,7 +5,6 @@ import Modal from "../components/Modal";
 import { useState, useContext } from "react";
 import { LangContext } from "../utils/LangContext";
 
-
 function Projects() {
   const { datas } = useContext(LangContext);
   const [openProjectId, setOpenProjectId] = useState(null);
@@ -20,7 +19,7 @@ function Projects() {
 
   const projects = datas.projects.map((project, index) => {
     return (
-      <li key={index} id="project-card" onClick={() => handleCardClick(index)}>
+      <li key={index} id={`project-card-${index}`} onClick={() => handleCardClick(index)} role="button" tabIndex={0} aria-label={`Ouvrir le projet ${project.title}`}>
         <Card datas={project} />
         <Modal
           isOpen={openProjectId === index}
@@ -32,7 +31,7 @@ function Projects() {
   });
 
   return (
-    <section className="projects-section" id="projects">
+    <section className="projects-section" id="projects" role="region" aria-label="Projets">
       <h2 className="section-title">
         {datas.basic_info.section_name.projects}
       </h2>

@@ -15,11 +15,11 @@ function About({ isContactOpen, setIsContactOpen }) {
   };
 
   return (
-    <section className="about-section" id="about">
+    <section className="about-section" id="about" role="region" aria-label="À propos de moi">
       <div className="about-section_title">
         <h2 className="section-title">{datas.basic_info.section_name.about}</h2>
       </div>
-      <div className="about-section_picture ">
+      <div className="about-section_picture " role="img" aria-label="Ma photo de SEA Web-Studio">
         <div className="outerCircle">
           <div className="innerCircle">
             <img
@@ -32,22 +32,22 @@ function About({ isContactOpen, setIsContactOpen }) {
       <div className="about-section_content">
         <div className="heading-content">
           <h3>{datas.basic_info.description_header}</h3>
-          <div className="about-section_picture mobile-pic">
-          <div className="outerCircle mobile-pic">
-            <div className="innerCircle mobile-pic">
-              <img
-                src={myPhoto}
-                alt="Photo of S.Escudero from SEA Web-Studio"
-              ></img>
+          <div className="about-section_picture mobile-pic" role="img" aria-label="Ma photo de SEA Web-Studio">
+            <div className="outerCircle mobile-pic">
+              <div className="innerCircle mobile-pic">
+                <img
+                  src={myPhoto}
+                  alt="Photo of S.Escudero from SEA Web-Studio"
+                ></img>
+              </div>
             </div>
           </div>
-                </div>
         </div>
         <h4>{datas.basic_info.description_1}</h4>
         <h4>{datas.basic_info.description_2}</h4>
         <h4>{datas.basic_info.description_3}</h4>
         <div className="--contact-wrapper">
-          <button onClick={handleOpenContact} style={{ cursor: "pointer", background:"transparent", border:'none' }} aria-label="Open contact form">
+          <button onClick={handleOpenContact} style={{ cursor: "pointer", background:"transparent", border:'none' }} aria-label="Ouvrir le formulaire de contact">
             <EmailIcon className="--icons" onClick={handleOpenContact} style={{height:"100%"}} color="blue"/>
             <h4>
               <strong style={{ color: "black" }}>
@@ -63,7 +63,7 @@ function About({ isContactOpen, setIsContactOpen }) {
             />
           )}
           <a href="/CV_ESCUDERO_Sebastien.pdf" download>
-            <FileOpenIcon className="--icons" />
+            <FileOpenIcon className="--icons" role="img" aria-label="Icône de document" />
             <h4>
               <strong>C.V.</strong>
             </h4>

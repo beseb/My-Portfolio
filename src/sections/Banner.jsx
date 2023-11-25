@@ -10,11 +10,10 @@ function Banner() {
   const { datas } = useContext(LangContext);
 
   return (
-    <div className="banner-section ">
-      <img src={seaLogo} alt="Logo de SEA Web-Studio" className="unselectable" />
+    <div className="banner-section " role="banner">
+      <img src={seaLogo} alt="Logo de SEA Web-Studio" className="unselectable" role="img" aria-label="Logo de SEA Web-Studio" />
       <div className="content">
         <Typical
-          // CHANGEZ LES WEB DEVELOPPER EN FR ET EN ANGLAIS //
           steps={[
             ". . .",
             1000,
@@ -28,6 +27,7 @@ function Banner() {
           loop={Infinity}
           wrapper="h1"
           className="typical"
+          aria-label="Texte animé : développeur web, designer et créateur"
         />
         {/* <a href="#about" className="btn CTA">
           <ExpandMoreIcon fontSize="large" color="white" className="CTA" />

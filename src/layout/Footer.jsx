@@ -6,23 +6,24 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Contact from "../components/ContactForm";
 import { useContext } from "react";
 import { LangContext } from "../utils/LangContext";
-/* eslint-disable react/prop-types */
 
 function Footer({ isContactOpen, setIsContactOpen }) {
   const { datas } = useContext(LangContext);
+
   const handleOpenContact = () => {
     setIsContactOpen(true);
   };
+
   return (
-    <footer>
+    <footer role="contentinfo" aria-label="Footer">
       <img src={seaLogo} alt="Logo SEA Web-Studio" className="seaLogo" />
       <div className="--content">
-        <div className="links">
+        <div className="links" role="navigation" aria-label="Liens de navigation">
           <a
             href="http://github.com/beseb"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Go to my Github"
+            aria-label="Aller sur mon Github"
           >
             <FontAwesomeIcon
               icon={faGithub}
@@ -34,7 +35,7 @@ function Footer({ isContactOpen, setIsContactOpen }) {
             href="https://www.linkedin.com/in/sebastien-escudero/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Go to my LinkedIn"
+            aria-label="Aller sur mon LinkedIn"
           >
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -49,7 +50,7 @@ function Footer({ isContactOpen, setIsContactOpen }) {
               height: "100%",
               background: "transparent",
             }}
-            aria-label="Open contact form"
+            aria-label="Ouvrir le formulaire de contact"
           >
             <FontAwesomeIcon
               icon={faEnvelope}
@@ -66,10 +67,11 @@ function Footer({ isContactOpen, setIsContactOpen }) {
           />
         )}
         <p className="copyright">
-          © 2023 SEA Web-Studio. All rights reserved.
+          © 2023 SEA Web-Studio. Tous droits réservés.
         </p>
       </div>
     </footer>
   );
 }
+
 export default Footer;
