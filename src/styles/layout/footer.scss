@@ -34,7 +34,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1em;
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       justify-content: flex-end;
       margin-left: 5%;
     }
@@ -45,8 +45,21 @@ footer {
       align-items: center;
       gap: 1em;
       // margin-top: 3%;
+      #footer-contact-icon {
+        height: 4em;
+        @media screen and (max-width: 1024px) {
+          height: 3.5em;
+        }
+        @media screen and (max-width: 900px) {
+          height: 3em;
+        }
+        @media screen and (max-width: 768px) {
+          height: 2em;
+        }
+      }
       & .footer-icons {
         height: 3em;
+        cursor: pointer;
         @media screen and (max-width: 1024px) {
           height: 2.5em;
         }
@@ -55,7 +68,6 @@ footer {
         }
         @media screen and (max-width: 768px) {
           height: 1.5em;
-
         }
         &:hover {
           opacity: 0.7;

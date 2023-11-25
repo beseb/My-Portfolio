@@ -56,6 +56,7 @@ function Footer({ isContactOpen, setIsContactOpen }) {
               icon={faEnvelope}
               className="footer-icons"
               color="grey"
+              id="footer-contact-icon"
             />
           </button>
         </div>
