@@ -36,15 +36,21 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
           onClick={handleCloseClick}
         />
         <div className="contactForm_header">
-          <div className="logo-wrapper"><img src={SeaLogo} className="SEALogo" alt="Logo of SEA Webstudio" /></div>
+          <div className="|">
+            <img
+              src={SeaLogo}
+              className="SEALogo"
+              alt="Logo of SEA Webstudio"
+            />
+          </div>
           <div className="infos-wrapper">
             <LocalPhoneIcon />
-            <h3 className="section-title tel">Tél. :</h3>
+            <h3 className="section-title tel">Tél.</h3>
             <h4>+33 6 12 34 56 78</h4>
           </div>
           <div className="infos-wrapper">
             <SendIcon />
-            <h3 className="section-title mail">Mail :</h3>
+            <h3 className="section-title mail">Mail</h3>
 
             <h4>sebastien.escudero@gmail.com</h4>
           </div>
@@ -54,7 +60,11 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
             </div>
             <div className="infos-wrapper">
               <PlaceIcon />
-              <h4>1 avenue de la République, 77120 Coulommiers</h4>
+              <h3 className="section-title place">Place</h3>
+              <h4>
+                1, Avenue de la République, <br />
+                77120 Coulommiers
+              </h4>
             </div>
           </div>
         </div>
