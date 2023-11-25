@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./ezgif.com-optimize.gif" alt="My Portfolio" />
+  <img src="/public/images/ezgif.com-optimize.gif" alt="My Portfolio" />
 
 &#xa0;
 
