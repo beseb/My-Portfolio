@@ -33,7 +33,6 @@
     "react-responsive-carousel": "^3.2.23",
     "react-typical": "^0.1.3",
     "react-vertical-timeline-component": "^3.6.0",
-    "rodal": "^2.1.0",
     "sass": "^1.69.5",
     "styled-components": "^6.1.1"
   },
