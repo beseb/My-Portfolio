@@ -44,13 +44,17 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
           <div className="infos-wrapper">
             <LocalPhoneIcon />
             <h3 className="section-title tel">Tél.</h3>
-            <h4>+33 6 12 34 56 78</h4>
+            <a href="tel:+33612345678">
+              <h4>+33 6 12 34 56 78</h4>
+            </a>
           </div>
           <div className="infos-wrapper">
             <SendIcon />
             <h3 className="section-title mail">Mail</h3>
 
-            <h4>sebastien.escudero@gmail.com</h4>
+            <a href="mailto:sebastien.escudero@gmail.com">
+              <h4>sebastien.escudero@gmail.com</h4>
+            </a>
           </div>
           <div className="map-section">
             <div id="leaflet-map">
@@ -59,10 +63,12 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
             <div className="infos-wrapper">
               <PlaceIcon />
               <h3 className="section-title place">Place</h3>
-              <h4>
-                1, Avenue de la République, <br />
-                77120 Coulommiers
-              </h4>
+              <a href="https://www.google.com/maps/place/Jardin+public+des+Capucins/@48.8083213,3.0931438,15.75z/data=!4m6!3m5!1s0x47e8b1a8af1147f7:0x88870b168fc802d0!8m2!3d48.810835!4d3.0868095!16s%2Fg%2F11b6gqjphm?entry=ttu" target="_blank" rel='norereffer noopener'>
+                <h4>
+                  1, Avenue de la République, <br />
+                  77120 Coulommiers
+                </h4>
+              </a>
             </div>
           </div>
         </div>
