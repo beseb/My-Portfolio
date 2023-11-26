@@ -61,7 +61,8 @@ function MobileNav() {
           {/* <FontAwesomeIcon icon={faMoon} style={{color: "#2b5aab",}} /> */}
           </a>
             <a className="setLangage" onClick={toggleLang}>
-            <img src={lang ? UkFlag : FrFlag} />
+            <img src={lang ? UkFlag : FrFlag}  height='50px'
+              width='50px'/>
           </a>
             </div>
           </div>
