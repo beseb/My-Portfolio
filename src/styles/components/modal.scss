@@ -82,6 +82,12 @@
       margin-bottom: 2%;
       padding: 5px;
       height: 30%;
+      &--title{
+        margin-top: 0;
+      }
+      &--description{
+        margin: 0;
+      }
       @media screen and (max-width: 768px) {
         margin-bottom: 0;
         justify-content: space-evenly;

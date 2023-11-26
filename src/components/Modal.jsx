@@ -56,7 +56,7 @@ function Modal({ isOpen, setIsOpen, project }) {
           })}
         </AwesomeSlider>
         <div className="modal_wrapper_content">
-          <h3 className="modal_wrapper--title" id={project.title}>
+          <h3 className="modal_wrapper_content--title" id={project.title}>
             {project.title}
           </h3>
 

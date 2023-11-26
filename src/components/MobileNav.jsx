@@ -57,7 +57,7 @@ function MobileNav() {
             </div>
             <div className="nav_buttons">
               <a className="setThemeColor">
-          <FontAwesomeIcon icon={faSun} style={{color: "#f1e904",}} />
+          {/* <FontAwesomeIcon icon={faSun} style={{color: "#f1e904",}} /> */}
           {/* <FontAwesomeIcon icon={faMoon} style={{color: "#2b5aab",}} /> */}
           </a>
             <a className="setLangage" onClick={toggleLang}>
