@@ -44,6 +44,8 @@ function Header({ isContactOpen, setIsContactOpen }) {
             <img
               src={lang ? UkFlag : FrFlag}
               alt="set language to english/french"
+              height='150px'
+              width='150px'
             />{" "}
           </a>{" "}
           {/* <a className="setThemeColor">
