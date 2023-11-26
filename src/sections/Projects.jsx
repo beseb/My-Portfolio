@@ -36,9 +36,7 @@ function Projects() {
       <h2 className="section-title">
         {datas.basic_info.section_name.projects}
       </h2>
-      <ScrollAnimation animateIn="fadeIn">
         <ul>{projects}</ul>
-      </ScrollAnimation>
     </section>
   );
 }

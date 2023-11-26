@@ -24,6 +24,8 @@ function Modal({ isOpen, setIsOpen, project }) {
       aria-describedby={project.description}
       aria-hidden={!isOpen}
     >
+      <div className="modal_overlay" onClick={handleCloseClick}></div>
+
       <div
         className="modal_wrapper"
         onClick={(e) => e.stopPropagation()}
@@ -87,7 +89,6 @@ function Modal({ isOpen, setIsOpen, project }) {
           </a>
         </div>
       </div>
-      <div className="modal_overlay" onClick={handleCloseClick}></div>
     </div>
   );
 }

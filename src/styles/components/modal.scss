@@ -4,11 +4,12 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 10; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
+
   background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
   button {
     background-color: transparent;
@@ -34,13 +35,13 @@
     border-radius: $border-radius;
     z-index: 2;
     margin: auto;
-    height: 70%;
+    // height: 70%;
     width: 50%;
     background-color: $primary-background-color;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     @media screen and (max-width: 1024px) {
       height: fit-content;
       width: 80%;
@@ -65,6 +66,7 @@
       height: auto;
       aspect-ratio: 1/1;
       @media screen and (max-width: 768px) {
+        height: 100%;
       }
       img {
         border-top-right-radius: $border-radius;
