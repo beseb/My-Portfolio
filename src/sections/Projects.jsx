@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import Modal from "../components/Modal";
 import { useState, useContext } from "react";
 import { LangContext } from "../utils/LangContext";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function Projects() {
   const { datas } = useContext(LangContext);
@@ -35,7 +36,9 @@ function Projects() {
       <h2 className="section-title">
         {datas.basic_info.section_name.projects}
       </h2>
-      <ul>{projects}</ul>
+      <ScrollAnimation animateIn="fadeIn">
+        <ul>{projects}</ul>
+      </ScrollAnimation>
     </section>
   );
 }

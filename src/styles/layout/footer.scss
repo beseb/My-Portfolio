@@ -7,7 +7,6 @@ footer {
   left: 0;
   background-image: url("/images/wave3.svg");
   background-size: cover;
-
   height: $header-height;
   min-height: fit-content;
   width: 100%;
@@ -17,33 +16,31 @@ footer {
   align-items: center;
   justify-content: flex-start;
   gap: 10%;
-  // padding: 0.5em;
   font-family: $secondary-font-family;
-  @media screen and (max-width:1024px) {
+  @media screen and (max-width: 1024px) {
     gap: 7%;
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     gap: 0%;
   }
 
   .seaLogo {
     height: 200%;
     width: auto;
-    // position: relative  ;
-    // top: 0;
-    // left: -10%;
-    @media screen and (max-width:1024px) {
+    position: relative;
+    display: flex;
+    @media screen and (max-width: 1024px) {
       height: 150%;
     }
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       gap: 0%;
+      height: 100%;
+
     }
-  
   }
   & .--content {
     width: 60%;
     height: 100%;
-    // margin-left: 17%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
