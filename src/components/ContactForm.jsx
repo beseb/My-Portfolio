@@ -79,19 +79,19 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
                 id="name"
                 type="text"
                 name="name"
-                placeholder="Your name"
+                placeholder={datas.basic_info.contactName}
                 required
                 aria-required
               />
             </div>
             <div className="form-content">
               <AlternateEmailIcon />
-              <label htmlFor="email">{name}</label>
+              <label htmlFor="email"></label>
               <input
                 id="email"
                 type="email"
                 name="email"
-                placeholder="Your e-mail"
+                placeholder={datas.basic_info.mail}
                 required
               />
               <ValidationError
@@ -105,7 +105,7 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
               <textarea
                 id="message"
                 name="message"
-                placeholder="Your message"
+                placeholder={datas.basic_info.message}
                 required
               />
               <ValidationError

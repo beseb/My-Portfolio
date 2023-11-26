@@ -19,7 +19,7 @@
     },
     "mail": "Your e-mail adress",
     "message": "Your message",
-    "contact": "Your name",
+    "contactName": "Your name",
     "language_flag": "/icons/united-kingdom-flag-icon.svg"
   },
   "projects": [
@@ -27,7 +27,7 @@
       "id": "1",
       "title": "Kasa",
       "startDate": "2023",
-      "description": "A project inspired by Airbnb, to choose and book accommodations and have dreamed vacations ! Done in React, Typescript and Sass !",
+      "description": "A project like Airbnb, created using React and Sass, to find and book dreamed vacation accommodations! The goal was to create the front-end part of the website from a given mockup and make it able to dynamically display accommodations using an API that communicates with the backend. It was also necessary to create animations for the Collapse components.",
       "images": [
         "/images/kasa/kasa-p1.webp",
         "/images/kasa/kasa-p2.webp"
@@ -41,10 +41,6 @@
           "name": "React"
         },
         {
-          "class": "devicon-typescript-plain colored",
-          "name": "TypeScript"
-        },
-        {
           "class": "devicon-sass-original colored",
           "name": "Sass"
         }
@@ -54,7 +50,7 @@
       "id": "2",
       "title": "Vieux-Grimoire",
       "startDate": "2023",
-      "description": "Online book rating website, I've created an API to communicate with the website's back-end and database, using Node.js and MongoDb.",
+      "description": "A book rating website with a personal space. The front-end was already done, and the task was to create the back-end of the site and its API to allow users to add, delete, modify, and update books, as well as rate them. Implemented with Node.js, Express.js, and MongoDB for the back-end.",
       "images": [
         "/images/vieux-grimoire/p1.webp",
         "/images/vieux-grimoire/p2.webp"
@@ -81,7 +77,7 @@
       "id": "3",
       "title": "Nina Carducci - Photographer",
       "startDate": "2023",
-      "description": "One of the first project I've done in my scholarship. I improved the SEO, global speed & security for a photographer's website and fixed a few bugs.",
+      "description":"One of the first projects I completed independently during my training. The goal was to improve overall performance, SEO, and fix some technical bugs related to modal displays.",
       "images": [
         "images/nina-carducci-portfolio/nina-p1.webp",
         "images/nina-carducci-portfolio/nina-p2.webp"
@@ -97,18 +93,15 @@
         {
           "class": "devicon-sass-original colored",
           "name": "Sass"
-        },
-        {
-          "class": "devicon-jquery-plain-wordmark colored",
-          "name": "JQuery"
         }
+      
       ]
     },
     {
       "id": "4",
       "title": "Booki",
       "startDate": "2023",
-      "description": "A simple and responsive landing-page for booking accomodations for a nice city-trip !",
+      "description": "A simple and responsive landing-page for booking accomodations for a nice city-trip ! Based on a given mockup, the task was to recreate the page interface using HTML & CSS.",
       "images": [
         "images/booki/p1.webp",
         "images/booki/p2.webp"
@@ -148,6 +141,7 @@
         "Express.Js, ",
         "MongoDb, ",
         "Git & Github, ",
+        "SEO Optimization, ",
         "Agile Methodology"
       ]
     },
