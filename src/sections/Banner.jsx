@@ -17,6 +17,8 @@ function Banner() {
         className="unselectable"
         role="img"
         aria-label="Logo de SEA Web-Studio"
+        height='auto'
+        width='auto'
       />
       <div className="content">
         <h1 style={{ visibility: "hidden", height:'0px', width:'0px'}}>SEA Web-Studio</h1>
