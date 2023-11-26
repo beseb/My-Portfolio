@@ -7,10 +7,10 @@
     "cta": "Show me more",
     "cta_website": "Show me",
     "description_header": "Hi ! 👋",
-    "description_1": "I'm Sebastien :) I'm a full-stack developper and I love to work with newest front-end frameworks like React and Next.js to make Internet a better place. ",
-    "description_2": "Welcome on my portfolio, where you can discover all of the projects I've been working on.",
-    "description_3": " I'll be more than happy to help you to build your website, give you advice on your SEO and do some web analysis.",
-    "description_4": "Let's get in touch !",
+    "description_1": "I'm Sebastien :) I'm a full-stack developper and I love to work with newest front-end frameworks like React and Next.js to make Internet a better place, with the best possible user experience. ",
+    "description_2": "Welcome to my portfolio, where you can discover my web development and design work.",
+    "description_3": " I would be delighted to help you with your web project, optimize your SEO and improve your site's performance.",
+    "description_4": "Contact me",
     "section_name": {
       "about": "About me",
       "projects": "Projects",
@@ -29,8 +29,8 @@
       "startDate": "2023",
       "description": "A project inspired by Airbnb, to choose and book accommodations and have dreamed vacations ! Done in React, Typescript and Sass !",
       "images": [
-        "src/assets/images/kasa/kasa-p1.webp",
-        "src/assets/images/kasa/kasa-p2.webp"
+        "/images/kasa/kasa-p1.webp",
+        "/images/kasa/kasa-p2.webp"
       ],
       "alt": "kasa image",
       "url": "https://kasa.seawebstudio.com",
