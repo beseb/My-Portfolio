@@ -16,9 +16,7 @@ header {
   .seaLogo {
     height: 200%;
     width: auto;
-    // position: relative  ;
-    // top: 0;
-    // left: -10%;
+  
     @media screen and (max-width: 1024px) {
       height: 150%;
     }
@@ -117,6 +115,8 @@ header {
     height: 2.5em;
     z-index: 1;
     transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 20px;
     &.active {
       transform: rotate(-90deg);
       position: absolute;
