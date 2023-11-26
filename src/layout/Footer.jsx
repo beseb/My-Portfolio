@@ -16,7 +16,7 @@ function Footer({ isContactOpen, setIsContactOpen }) {
 
   return (
     <footer role="contentinfo" aria-label="Footer">
-      <img src={seaLogo} alt="Logo SEA Web-Studio" className="seaLogo" />
+      <img src={seaLogo} alt="Logo SEA Web-Studio" className="seaLogo" height="150px" width='150px'/>
       <div className="--content">
         <div className="links" role="navigation" aria-label="Liens de navigation">
           <a

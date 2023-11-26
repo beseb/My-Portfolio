@@ -16,7 +16,7 @@ function Header({ isContactOpen, setIsContactOpen }) {
   return (
     <header>
       {" "}
-      <img src={seaLogo} alt="Logo SEA Web-Studio" className="seaLogo" height='200%' width='auto'/>{" "}
+      <img src={seaLogo} alt="Logo SEA Web-Studio" className="seaLogo" height='150px' width='150px'/>{" "}
       <nav className="desktopNav">
         {" "}
         <a href="#about">{datas.basic_info.section_name.about}</a>{" "}
