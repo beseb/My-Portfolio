@@ -45,8 +45,8 @@
     .outerCircle {
       background-color: white;
       border-radius: 50%;
-      width: 30vw;
-      height: 30vw;
+      width: 20vw;
+      height: 20vw;
       display: flex;
       place-content: center;
       place-items: center;
@@ -61,7 +61,7 @@
 
         img {
           object-fit: cover;
-          height: 120%;
+          height: 100%;
           width: 100%;
         }
       }

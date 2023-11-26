@@ -14,10 +14,17 @@ header {
   overflow: visible;
 
   .seaLogo {
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
+    height: 200%;
+    width: auto;
+    // position: relative  ;
+    // top: 0;
+    // left: -10%;
+    @media screen and (max-width: 1024px) {
+      height: 150%;
+    }
+    @media screen and (max-width: 768px) {
+      gap: 0%;
+    }
   }
   // regle pour l'underline des nav a
   nav a:hover {

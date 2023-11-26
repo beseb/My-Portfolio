@@ -46,11 +46,11 @@ function Header({ isContactOpen, setIsContactOpen }) {
               alt="set language to english/french"
             />{" "}
           </a>{" "}
-          <a className="setThemeColor">
+          {/* <a className="setThemeColor">
             {" "}
             <FontAwesomeIcon icon={faSun} style={{ color: "#f1e904" }} />{" "}
             <FontAwesomeIcon icon={faMoon} style={{ color: "#2b5aab" }} />{" "}
-          </a>{" "}
+          </a>{" "} */}
         </div>{" "}
       </nav>{" "}
       <MobileNav />{" "}
