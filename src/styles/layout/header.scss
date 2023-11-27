@@ -2,7 +2,11 @@
 @import "../variables.scss";
 
 header {
-  background-color: $primary-background-color;
+  // background-color: $primary-background-color;
+  background: url('/public/images/wave4.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
   width: 100%;
   height: $header-height;
   display: flex;
@@ -65,7 +69,7 @@ header {
         width: 100%;
         height: 3px;
         border-radius: 4px;
-        background-color: coral;
+        background-color: lightblue;
         bottom: 0;
         left: 0;
         transform-origin: right;

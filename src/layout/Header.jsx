@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */ import seaLogo from "/images/SEA-logo.webp";
+/* eslint-disable react/prop-types */
+import seaLogo from "/images/SEA-logo2.png";
 import "../styles/main.scss";
 import MobileNav from "../components/MobileNav";
 import UkFlag from "/icons/united-kingdom-flag-icon.svg";
@@ -16,7 +17,13 @@ function Header({ isContactOpen, setIsContactOpen }) {
   return (
     <header>
       {" "}
-      <img src={seaLogo} alt="Logo SEA Web-Studio" className="seaLogo" height='150px' width='150px'/>{" "}
+      <img
+        src={seaLogo}
+        alt="Logo SEA Web-Studio"
+        className="seaLogo"
+        height="150px"
+        width="150px"
+      />{" "}
       <nav className="desktopNav">
         {" "}
         <a href="#about">{datas.basic_info.section_name.about}</a>{" "}
@@ -44,8 +51,8 @@ function Header({ isContactOpen, setIsContactOpen }) {
             <img
               src={lang ? UkFlag : FrFlag}
               alt="set language to english/french"
-              height='150px'
-              width='150px'
+              height="150px"
+              width="150px"
             />{" "}
           </a>{" "}
           {/* <a className="setThemeColor">
