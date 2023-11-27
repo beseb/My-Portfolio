@@ -9,6 +9,8 @@ import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import Contact from "../components/ContactForm";
 import { useContext } from "react";
 import { LangContext } from "../utils/LangContext";
+
+
 function Header({ isContactOpen, setIsContactOpen }) {
   const { lang, toggleLang, datas } = useContext(LangContext);
   const handleOpenContact = () => {
@@ -37,13 +39,6 @@ function Header({ isContactOpen, setIsContactOpen }) {
           {" "}
           Contact{" "}
         </a>{" "}
-        {isContactOpen && (
-          <Contact
-            datas={datas}
-            isContactOpen={isContactOpen}
-            setIsContactOpen={setIsContactOpen}
-          />
-        )}{" "}
         <div className="nav_buttons">
           {" "}
           <a className="setLangage" onClick={toggleLang}>
@@ -62,7 +57,14 @@ function Header({ isContactOpen, setIsContactOpen }) {
           </a>{" "} */}
         </div>{" "}
       </nav>{" "}
-      <MobileNav />{" "}
+      <MobileNav isContactOpen={isContactOpen} setIsContactOpen={setIsContactOpen} />{" "}
+          {isContactOpen && (
+            <Contact
+              datas={datas}
+              isContactOpen={isContactOpen}
+              setIsContactOpen={setIsContactOpen}
+            />
+          )}{" "}
     </header>
   );
 }

@@ -11,6 +11,9 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import SendIcon from "@mui/icons-material/Send";
 import imgMap from "/images/map.webp";
 
+
+
+
 function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
   // Fonction pour arrêter la propagation et fermer la modal
   const handleCloseClick = (event) => {

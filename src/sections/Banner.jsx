@@ -13,22 +13,28 @@ function Banner() {
   const { datas } = useContext(LangContext);
 
   const BackDiv = styled.div`
-    width: 35%;
-    height: 60%;
+    width: 30%;
+    height: 55%;
     border-radius: 15px;
     opacity: 0.7;
     position: absolute;
     top: 500px;
     left: 110px;
+    @media screen and (max-width: 768px){
+      display:none;
+    }
   `;
   const BackDiv2 = styled.div`
-    width: 35%;
-    height: 60%;
+    width: 30%;
+    height: 55%;
     border-radius: 15px;
     opacity: 0.7;
     position: absolute;
     top: 500px;
     right: 110px;
+    @media screen and (max-width: 768px){
+      display:none;
+    }
   `;
 
   return (
