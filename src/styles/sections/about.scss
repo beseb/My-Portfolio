@@ -17,6 +17,7 @@
   margin: auto;
   padding: 10px;
   @media screen and (max-width: 768px) {
+    order: 4;
     margin-left: 0;
     height: fit-content;
     display: flex;

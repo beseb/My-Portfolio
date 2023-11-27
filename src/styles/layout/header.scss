@@ -16,7 +16,9 @@ header {
   justify-content: space-between;
   box-sizing: content-box;
   overflow: visible;
-
+  @media screen and (max-width:768px) {
+    order: 1;
+  }
   .seaLogo {
     height: 200%;
     width: auto;

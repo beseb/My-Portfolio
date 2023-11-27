@@ -45,6 +45,7 @@ function Banner() {
       <BackDiv2>
         <ImageComponent2 />
       </BackDiv2>
+      <div className="content">
       <img
         src={seaLogo}
         alt="Logo de SEA Web-Studio"
@@ -54,7 +55,6 @@ function Banner() {
         height="500px"
         width="500px"
       />
-      <div className="content">
         <h1 style={{ visibility: "hidden", height: "0px", width: "0px" }}>
           SEA Web-Studio
         </h1>
