@@ -11,9 +11,6 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import SendIcon from "@mui/icons-material/Send";
 import imgMap from "/images/map.webp";
 
-
-
-
 function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
   // Fonction pour arrêter la propagation et fermer la modal
   const handleCloseClick = (event) => {
@@ -55,8 +52,8 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
             <SendIcon />
             <h3 className="section-title mail">Mail</h3>
 
-            <a href="mailto:sebastien.escudero@gmail.com">
-              <h4>sebastien.escudero@gmail.com</h4>
+            <a href="mailto:contact@seawebstudio.com">
+              <h4>contact@seawebstudio.com</h4>
             </a>
           </div>
           <div className="map-section">
@@ -66,7 +63,11 @@ function ContactForm({ datas, isContactOpen, setIsContactOpen }) {
             <div className="infos-wrapper">
               <PlaceIcon />
               <h3 className="section-title place">Place</h3>
-              <a href="https://www.google.com/maps/place/Jardin+public+des+Capucins/@48.8083213,3.0931438,15.75z/data=!4m6!3m5!1s0x47e8b1a8af1147f7:0x88870b168fc802d0!8m2!3d48.810835!4d3.0868095!16s%2Fg%2F11b6gqjphm?entry=ttu" target="_blank" rel='norereffer noopener'>
+              <a
+                href="https://www.google.com/maps/place/Jardin+public+des+Capucins/@48.8083213,3.0931438,15.75z/data=!4m6!3m5!1s0x47e8b1a8af1147f7:0x88870b168fc802d0!8m2!3d48.810835!4d3.0868095!16s%2Fg%2F11b6gqjphm?entry=ttu"
+                target="_blank"
+                rel="norereffer noopener"
+              >
                 <h4>
                   1, Avenue de la République, <br />
                   77120 Coulommiers
