@@ -23,8 +23,8 @@
   <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/my-vite-portfolio?color=56BEB8" /> -->
 
   <img alt="Github stars" src="https://img.shields.io/github/stars/beseb/my-portfolio?color=56BEB8" />
-
   [![Netlify Status](https://api.netlify.com/api/v1/badges/1105b607-aff0-4109-8079-0c5f626c92ff/deploy-status)](https://app.netlify.com/sites/inspiring-sopapillas-a3c4a7/deploys)
+
 </p>
 
 Status
